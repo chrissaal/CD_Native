@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "digitalcredentialoauth",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/santanderuni/DigitalCredentialOAuth",
+      "state" : {
+        "revision" : "bc500d92105e6cf6964f08e14105d2c5b0f7881a",
+        "version" : "1.3.1"
+      }
+    }
+  ],
+  "version" : 2
+}

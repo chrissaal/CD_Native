@@ -1,0 +1,934 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CampusDigitalUIResources
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+@_exported import CampusDigitalUIResources
+import DeveloperToolsSupport
+import Foundation
+import Swift
+import SwiftUI
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+extension CampusDigitalUIResources.StackedVC {
+  @_Concurrency.MainActor(unsafe) public func addObservers()
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class ErrorInfoView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public init(presenter: any CampusDigitalUIResources.ErrorInfoPresenter)
+  @objc deinit
+}
+public struct UniversiaDesignTokens {
+  public static let sizeXXS: CoreFoundation.CGFloat
+  public static let sizeXS: CoreFoundation.CGFloat
+  public static let sizeS: CoreFoundation.CGFloat
+  public static let sizeM: CoreFoundation.CGFloat
+  public static let sizeL: CoreFoundation.CGFloat
+  public static let sizeXL: CoreFoundation.CGFloat
+  public static let sizeXXL: CoreFoundation.CGFloat
+}
+public protocol CampusDigitalWebViewPresenter {
+  var model: CampusDigitalUIResources.CampusDigitalWebViewModel { get }
+  func checkIfAccessTokenIsExpired()
+  func openInExternalBrowser(url: Foundation.URL)
+  func callNativeAction(with body: Any)
+}
+extension CampusDigitalUIResources.CheckBoxButton {
+  @_Concurrency.MainActor(unsafe) public static func commonCheckBox(isSelected: Swift.Bool = false) -> CampusDigitalUIResources.CheckBoxButton
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class InfoView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public init(model: CampusDigitalUIResources.InfoViewModel, bundle: Foundation.Bundle = Bundle(for: InfoView.self))
+  @_Concurrency.MainActor(unsafe) @objc override final public var intrinsicContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) final public func updateMessage(with message: Swift.String)
+  @_Concurrency.MainActor(unsafe) final public func updateMessage(with attributedText: Foundation.NSAttributedString)
+  @objc deinit
+}
+extension CampusDigitalUIResources.InfoView : UIKit.UITextViewDelegate {
+  @_Concurrency.MainActor(unsafe) @objc final public func textView(_ textView: UIKit.UITextView, shouldInteractWith URL: Foundation.URL, in characterRange: Foundation.NSRange, interaction: UIKit.UITextItemInteraction) -> Swift.Bool
+}
+extension WebKit.WKWebView {
+  @_Concurrency.MainActor(unsafe) public static func commonWebView(configuration: WebKit.WKWebViewConfiguration = WKWebViewConfiguration(), uiDelegate: (any WebKit.WKUIDelegate)?, navigationDelegate: (any WebKit.WKNavigationDelegate)?, contentMode: UIKit.UIView.ContentMode = .scaleToFill) -> WebKit.WKWebView
+}
+extension CampusDigitalUIResources.CampusDigitalWebViewVC : WebKit.WKScriptMessageHandler {
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
+}
+public enum ImageScaleFactor : Swift.Equatable {
+  case medium
+  case large
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: CampusDigitalUIResources.ImageScaleFactor, b: CampusDigitalUIResources.ImageScaleFactor) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol ScaleFactorManager {
+  func scaleFactor() -> CampusDigitalUIResources.ImageScaleFactor
+}
+public struct ScaleFactorManagerImpl {
+  public init(scaleFactor: CoreFoundation.CGFloat)
+}
+extension CampusDigitalUIResources.ScaleFactorManagerImpl : CampusDigitalUIResources.ScaleFactorManager {
+  public func scaleFactor() -> CampusDigitalUIResources.ImageScaleFactor
+}
+public protocol ErrorInfoPresenter {
+  var errorDescription: Swift.String { get }
+  var errorInfo: Swift.String { get }
+  var screenshotIcon: UIKit.UIImage? { get }
+  var screenshotHint: Swift.String { get }
+  var additionalButtonIsHidden: Swift.Bool { get }
+  var additionalButtonTitle: Swift.String { get }
+  var additionalButtonStyle: CampusDigitalUIResources.CampusDigitalButtonStyle { get }
+  func additionalButtonAction()
+}
+public struct ErrorInfoPresenterImpl {
+  public var errorDescription: Swift.String {
+    get
+  }
+  public var errorInfo: Swift.String {
+    get
+  }
+  public var screenshotIcon: UIKit.UIImage? {
+    get
+  }
+  public var screenshotHint: Swift.String {
+    get
+  }
+  public var additionalButtonIsHidden: Swift.Bool {
+    get
+  }
+  public var additionalButtonTitle: Swift.String {
+    get
+  }
+  public var additionalButtonStyle: CampusDigitalUIResources.CampusDigitalButtonStyle {
+    get
+  }
+  public init(additionalErrorInfo: CampusDigitalUIResources.CampusDigitalAdditionalErrorInfo)
+}
+extension CampusDigitalUIResources.ErrorInfoPresenterImpl : CampusDigitalUIResources.ErrorInfoPresenter {
+  public func additionalButtonAction()
+}
+extension QuartzCore.CALayer {
+  public func applyShadow(color: UIKit.UIColor?, alpha: Swift.Float = 1.0, xPosition: CoreFoundation.CGFloat = 0.0, yPosition: CoreFoundation.CGFloat = 0.0, radius: CoreFoundation.CGFloat, spread: CoreFoundation.CGFloat = 0.0)
+  public func enableShadow(alpha: Swift.Float = 1.0)
+  public func disableShadow()
+}
+public struct RadioButtonModel {
+  public let index: Swift.Int
+  public let value: Swift.String
+  public let subtitle: Swift.String
+  public let type: Swift.String
+  public init(index: Swift.Int, value: Swift.String, subtitle: Swift.String, type: Swift.String)
+}
+@objc @_Concurrency.MainActor(unsafe) public class SnackBar : UIKit.UIView {
+  public struct Constants {
+    public static let defaultNilCGFloat: CoreFoundation.CGFloat
+    public static let defaultNumberOfLines: Swift.Int
+    public static let defaultBackgroundColor: UIKit.UIColor
+    public static let defaultTextColor: UIKit.UIColor
+    public static let defaultFont: UIKit.UIFont
+    public static let defaultActionButtonColor: UIKit.UIColor
+    public static let defaultActionButtonFont: UIKit.UIFont
+    public static let defaultCloseColor: UIKit.UIColor
+    public static let defaultCornerRadius: CoreFoundation.CGFloat
+    public static let closeAffordanceImage: UIKit.UIImage
+    public static let defaultTimeInterval: Swift.Double
+    public static let invisibleAlpha: CoreFoundation.CGFloat
+    public static let visibleAlpha: CoreFoundation.CGFloat
+    public static let durationAnimationIn: Swift.Double
+    public static let modeAnimationIn: UIKit.UIView.AnimationOptions
+    public static let durationAnimationOut: Swift.Double
+    public static let modeAnimationOut: UIKit.UIView.AnimationOptions
+    public static let animationDelay: Swift.Double
+    public static let halfAlpha: CoreFoundation.CGFloat
+    public static let defaultVerticalPadding: CoreFoundation.CGFloat
+    public static let maximumWidthActionButton: CoreFoundation.CGFloat
+  }
+  @_Concurrency.MainActor(unsafe) required public init(contextVC: UIKit.UIViewController, snackBarModel: CampusDigitalUIResources.SnackBarModel, backgroundColor: UIKit.UIColor = Constants.defaultBackgroundColor, textFont: UIKit.UIFont = Constants.defaultFont, textColor: UIKit.UIColor = Constants.defaultTextColor, buttonFont: UIKit.UIFont = Constants.defaultActionButtonFont, buttonColor: UIKit.UIColor = Constants.defaultActionButtonColor, closeColor: UIKit.UIColor = Constants.defaultCloseColor, cornerRadius: CoreFoundation.CGFloat = Constants.defaultCornerRadius)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension CampusDigitalUIResources.SnackBar {
+  @_Concurrency.MainActor(unsafe) public func presentSnackBar()
+  @_Concurrency.MainActor(unsafe) public func dismissSnackBar()
+}
+extension CoreFoundation.CGFloat {
+  public var density: CoreFoundation.CGFloat {
+    get
+  }
+}
+public struct CampusDigitalVersionInfo {
+  public let name: Swift.String
+  public let version: Swift.String
+  public var prettyVersion: Swift.String {
+    get
+  }
+  public init(name: Swift.String, version: Swift.String)
+}
+extension CampusDigitalUIResources.CampusDigitalVersionInfo : Swift.Equatable {
+  public static func == (a: CampusDigitalUIResources.CampusDigitalVersionInfo, b: CampusDigitalUIResources.CampusDigitalVersionInfo) -> Swift.Bool
+}
+public enum ImageDownloaderError : Swift.Error {
+  case downloadingError
+  case cachingError
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension CampusDigitalUIResources.ImageDownloaderError : Swift.Equatable {
+  public static func == (a: CampusDigitalUIResources.ImageDownloaderError, b: CampusDigitalUIResources.ImageDownloaderError) -> Swift.Bool
+}
+public protocol ImageDownloader {
+  func loadImage(from url: Swift.String, completion: @escaping (Swift.Result<Foundation.Data, CampusDigitalUIResources.ImageDownloaderError>) -> Swift.Void)
+}
+public struct ImageDownloaderImpl {
+  public init(imageCache: any CampusDigitalUIResources.ImageCache, queue: Dispatch.DispatchQueue = DispatchQueue(label: "image_downloader"))
+}
+extension CampusDigitalUIResources.ImageDownloaderImpl : CampusDigitalUIResources.ImageDownloader {
+  public func loadImage(from url: Swift.String, completion: @escaping (Swift.Result<Foundation.Data, CampusDigitalUIResources.ImageDownloaderError>) -> Swift.Void)
+}
+extension CampusDigitalUIResources.CampusDigitalButton {
+  @_Concurrency.MainActor(unsafe) public static func primary(text: Swift.String? = nil, backgroundColor: UIKit.UIColor? = Constants.defaultBackgroundColor, disabledBackgroundColor: UIKit.UIColor? = Constants.defaultDisabledBackgroundColor, textColor: UIKit.UIColor? = Constants.defaultTextColor, disabledTextColor: UIKit.UIColor? = Constants.defaultDisabledTextColor, imageColor: UIKit.UIColor? = Constants.defaultTextColor, font: UIKit.UIFont? = Constants.defaultFont, cornerRadius: CoreFoundation.CGFloat = Constants.defaultCornerRadius, applyShadow: Swift.Bool = true, image: UIKit.UIImage? = nil, isEnabled: Swift.Bool = true) -> CampusDigitalUIResources.CampusDigitalButton
+  @_Concurrency.MainActor(unsafe) public static func primaryL(text: Swift.String? = nil, isEnabled: Swift.Bool = true) -> CampusDigitalUIResources.CampusDigitalButton
+  @_Concurrency.MainActor(unsafe) public static func primaryM(text: Swift.String? = nil, isEnabled: Swift.Bool = true) -> CampusDigitalUIResources.CampusDigitalButton
+}
+extension UIKit.UIApplication {
+  @_Concurrency.MainActor(unsafe) public class func getTopViewController(base: UIKit.UIViewController? = nil) -> UIKit.UIViewController?
+  @_Concurrency.MainActor(unsafe) public class func getKeyWindow() -> UIKit.UIWindow?
+  @_Concurrency.MainActor(unsafe) public class func keyWindowRootVC() -> UIKit.UIViewController?
+}
+extension CampusDigitalUIResources.SnackBar {
+  public struct ConstraintConstants {
+    public static let bottomMessageValue: CoreFoundation.CGFloat
+    public static let defaultVerticalPadding: CoreFoundation.CGFloat
+    public static let maximumWidthActionButton: CoreFoundation.CGFloat
+  }
+}
+extension UIKit.UITableView {
+  @_Concurrency.MainActor(unsafe) public static func commonTableView(style: UIKit.UITableView.Style = .plain, separatorStyle: UIKit.UITableViewCell.SeparatorStyle, dataSource: (any UIKit.UITableViewDataSource)?, delegate: (any UIKit.UITableViewDelegate)?, addFooter: Swift.Bool = false, allowsSelection: Swift.Bool = true) -> UIKit.UITableView
+}
+public struct SnackBarModel {
+  public let message: Swift.String
+  public let actionTitle: Swift.String
+  public let actionHandler: (() -> Swift.Void)?
+  public let withClose: Swift.Bool
+  public init(message: Swift.String, actionTitle: Swift.String = "", actionHandler: (() -> Swift.Void)? = nil, withClose: Swift.Bool = false)
+}
+public struct InfoViewModel {
+  public struct Constants {
+    public static let defaultIconName: Swift.String
+    public static let defaultBackgroundColor: UIKit.UIColor?
+    public static let defaultTextColor: UIKit.UIColor?
+    public static let defaultIconColor: UIKit.UIColor?
+    public static let defaultFont: UIKit.UIFont
+  }
+  public init(iconName: Swift.String = Constants.defaultIconName, text: Swift.String = "", attributedText: Foundation.NSAttributedString? = nil, backgroundColor: UIKit.UIColor? = Constants.defaultBackgroundColor, textColor: UIKit.UIColor? = Constants.defaultTextColor, iconColor: UIKit.UIColor? = Constants.defaultIconColor, iconLateralMargin: CoreFoundation.CGFloat = UniversiaDesignTokens.sizeXS, iconHeight: CoreFoundation.CGFloat = UniversiaDesignTokens.sizeM, font: UIKit.UIFont = Constants.defaultFont, textAlignment: UIKit.NSTextAlignment = .left, textMargin: CoreFoundation.CGFloat = UniversiaDesignTokens.sizeS, action: (() -> Swift.Void)? = nil)
+}
+extension UIKit.UIView {
+  public struct Constants {
+    public static let defaultCardRadius: CoreFoundation.CGFloat
+    public static let defaultShadowAlpha: Swift.Float
+    public static let yPosition: CoreFoundation.CGFloat
+    public static let defaultShadowRadius: CoreFoundation.CGFloat
+  }
+  @_Concurrency.MainActor(unsafe) public static var commonView: UIKit.UIView {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public static func cardView(backgroundColor: UIKit.UIColor? = .neutralCard20, cornerRadius: CoreFoundation.CGFloat = Constants.defaultCardRadius, shadowColor: UIKit.UIColor? = .defaultShadow, shadowAlpha: Swift.Float = Constants.defaultShadowAlpha, yPosition: CoreFoundation.CGFloat = 0.0, shadowRadius: CoreFoundation.CGFloat = Constants.defaultShadowRadius) -> UIKit.UIView
+}
+@objc @_Concurrency.MainActor(unsafe) open class CampusDigitalWebViewVC : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) public init(presenter: any CampusDigitalUIResources.CampusDigitalWebViewPresenter)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
+    @objc get
+  }
+  @objc deinit
+}
+extension CampusDigitalUIResources.CampusDigitalWebViewVC {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillDisappear(_ animated: Swift.Bool)
+}
+extension UIKit.UIImageView {
+  @_Concurrency.MainActor(unsafe) public var changeColor: UIKit.UIColor? {
+    get
+    set
+  }
+}
+extension UIKit.UIScrollView {
+  @_Concurrency.MainActor(unsafe) public var isAtTop: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var isAtBottom: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var verticalOffsetForTop: CoreFoundation.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var verticalOffsetForBottom: CoreFoundation.CGFloat {
+    get
+  }
+}
+extension UIKit.UICollectionView {
+  @_Concurrency.MainActor(unsafe) public static func commonCollectionView(layout: UIKit.UICollectionViewFlowLayout, isPagingEnabled: Swift.Bool = false, dataSource: (any UIKit.UICollectionViewDataSource)?, delegate: (any UIKit.UICollectionViewDelegate)?, showsHorizontalScrollIndicator: Swift.Bool = false, showsVerticalScrollIndicator: Swift.Bool = false) -> UIKit.UICollectionView
+}
+extension UIKit.UIStackView {
+  @_Concurrency.MainActor(unsafe) public static func commonStackView(spacing: CoreFoundation.CGFloat = 0.0, distribution: UIKit.UIStackView.Distribution, axis: UIKit.NSLayoutConstraint.Axis) -> UIKit.UIStackView
+}
+public struct CampusDigitalAdditionalErrorInfo {
+  public init(description: Swift.String, info: CampusDigitalUIResources.CampusDigitalAdditionalInfo, additionalButton: CampusDigitalUIResources.CampusDigitalErrorButton? = nil)
+}
+extension CampusDigitalUIResources.CampusDigitalAdditionalErrorInfo : Swift.Equatable {
+  public static func == (a: CampusDigitalUIResources.CampusDigitalAdditionalErrorInfo, b: CampusDigitalUIResources.CampusDigitalAdditionalErrorInfo) -> Swift.Bool
+}
+extension UIKit.UITextView {
+  @_Concurrency.MainActor(unsafe) public static func attributtedLink(font: UIKit.UIFont? = nil, textAlignment: UIKit.NSTextAlignment, linkColor: UIKit.UIColor, underlineColor: UIKit.UIColor, underlineStyle: UIKit.NSUnderlineStyle, delegate: (any UIKit.UITextViewDelegate)?, attributtedText: Foundation.NSAttributedString?) -> UIKit.UITextView
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class CheckBoxButton : UIKit.UIButton {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect = .zero)
+  @objc deinit
+}
+extension Foundation.NSMutableAttributedString {
+  public func addIcon(icon: UIKit.UIImage?, iconHeight: CoreFoundation.CGFloat, iconWidth: CoreFoundation.CGFloat)
+}
+public protocol CampusDigitalErrorViewRouter {
+  func createModule(with errorModel: CampusDigitalUIResources.CampusDigitalErrorModel) -> UIKit.UIViewController
+}
+public struct CampusDigitalErrorViewRouterImpl {
+  public init()
+}
+extension CampusDigitalUIResources.CampusDigitalErrorViewRouterImpl : CampusDigitalUIResources.CampusDigitalErrorViewRouter {
+  public func createModule(with errorModel: CampusDigitalUIResources.CampusDigitalErrorModel) -> UIKit.UIViewController
+}
+public protocol WebViewErrorNotifier {
+  func handle(error: CampusDigitalUIResources.WebViewError)
+}
+public struct UniversiaButtonDesignTokens {
+  public static let defaultHeight: CoreFoundation.CGFloat
+  public static let defaultMHeight: CoreFoundation.CGFloat
+  public static let defaultLHeight: CoreFoundation.CGFloat
+  public static let defaultMWidth: CoreFoundation.CGFloat
+  public static let defaultLWidth: CoreFoundation.CGFloat
+}
+extension UIKit.UIFont {
+  public static let loadUniversiaFonts: ()
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class UniversiaField : UIKit.UIControl {
+  @_Concurrency.MainActor(unsafe) public var placeholderLabel: UIKit.UILabel {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var textField: CampusDigitalUIResources.SecureTextField {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public init(frame: CoreFoundation.CGRect = .zero, enabled: Swift.Bool = true, isCombo: Swift.Bool = false)
+  @objc deinit
+}
+extension CampusDigitalUIResources.UniversiaField {
+  @_Concurrency.MainActor(unsafe) public func setup(mainColor: UIKit.UIColor?)
+  @_Concurrency.MainActor(unsafe) public func sanitizeTextfield() -> Swift.String
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class SecureTextField : UIKit.UITextField {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func canPerformAction(_ action: ObjectiveC.Selector, withSender sender: Any?) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class UniversiaMultilineField : CampusDigitalUIResources.UniversiaField {
+  @_Concurrency.MainActor(unsafe) public init()
+  @_Concurrency.MainActor(unsafe) public func sanitizeTextView() -> Swift.String
+  @objc deinit
+}
+extension CampusDigitalUIResources.UniversiaMultilineField : UIKit.UITextViewDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func textViewShouldEndEditing(_ textView: UIKit.UITextView) -> Swift.Bool
+}
+extension UIKit.UINavigationController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillLayoutSubviews()
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class CampusDigitalButton : UIKit.UIButton {
+  public struct Constants {
+    public static let defaultBackgroundColor: UIKit.UIColor?
+    public static let defaultDisabledBackgroundColor: UIKit.UIColor?
+    public static let defaultTextColor: UIKit.UIColor
+    public static let defaultDisabledTextColor: UIKit.UIColor?
+    public static let defaultFont: UIKit.UIFont
+    public static let defaultDisabledFont: UIKit.UIFont
+    public static let defaultUnderlineFont: UIKit.UIFont
+    public static let defaultCornerRadius: CoreFoundation.CGFloat
+    public static let defaultShadowColor: UIKit.UIColor
+    public static let darkerBlack: UIKit.UIColor?
+    public static let defaultShadowAlpha: Swift.Float
+    public static let defaultShadowRadius: CoreFoundation.CGFloat
+    public static let defaultShadowYPosition: CoreFoundation.CGFloat
+  }
+  @_Concurrency.MainActor(unsafe) public init(frame: CoreFoundation.CGRect = .zero, backgroundColor: UIKit.UIColor? = Constants.defaultBackgroundColor, disabledBackgroundColor: UIKit.UIColor? = Constants.defaultDisabledBackgroundColor, textColor: UIKit.UIColor? = Constants.defaultTextColor, disabledTextColor: UIKit.UIColor? = Constants.defaultDisabledTextColor, font: UIKit.UIFont? = Constants.defaultFont, disabledFont: UIKit.UIFont? = Constants.defaultDisabledFont, cornerRadius: CoreFoundation.CGFloat = Constants.defaultCornerRadius)
+  @_Concurrency.MainActor(unsafe) final public func setUpTitle(_ text: Swift.String?)
+  @_Concurrency.MainActor(unsafe) final public func setUpShadow(shadowColor: UIKit.UIColor? = Constants.defaultShadowColor, shadowAlpha: Swift.Float = Constants.defaultShadowAlpha, shadowYPosition: CoreFoundation.CGFloat = Constants.defaultShadowYPosition, shadowRadius: CoreFoundation.CGFloat = Constants.defaultShadowRadius)
+  @_Concurrency.MainActor(unsafe) final public func setUpImage(_ image: UIKit.UIImage, color: UIKit.UIColor?)
+  @_Concurrency.MainActor(unsafe) final public func setUpUnderlineText(text: Swift.String?)
+  @_Concurrency.MainActor(unsafe) final public func set(opacity: Swift.Float)
+  @_Concurrency.MainActor(unsafe) final public func set(isEnabled: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public var isEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+extension CampusDigitalUIResources.CampusDigitalButton {
+  @_Concurrency.MainActor(unsafe) final public func showActivityIndicator(with color: UIKit.UIColor = .white)
+  @_Concurrency.MainActor(unsafe) final public func hideActivityIndicator()
+}
+public protocol SendButtonUpdater : AnyObject {
+  func enableSendButton()
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class RadioGroup : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public init(items: [CampusDigitalUIResources.RadioButtonModel], mainColor: UIKit.UIColor, selectedItem: CampusDigitalUIResources.RadioButtonModel? = nil, sendButtonUpdater: (any CampusDigitalUIResources.SendButtonUpdater)? = nil)
+  @objc deinit
+}
+extension CampusDigitalUIResources.RadioGroup {
+  @_Concurrency.MainActor(unsafe) public func update(items: [CampusDigitalUIResources.RadioButtonModel])
+}
+extension CampusDigitalUIResources.RadioGroup {
+  @_Concurrency.MainActor(unsafe) public func getRadioButtonSelected() -> CampusDigitalUIResources.RadioButtonModel?
+}
+extension CampusDigitalUIResources.RadioGroup : CampusDigitalUIResources.RadioButtonDelegate {
+  @_Concurrency.MainActor(unsafe) public func buttonSelected(model: CampusDigitalUIResources.RadioButtonModel)
+}
+extension CampusDigitalUIResources.CampusDigitalButton {
+  @_Concurrency.MainActor(unsafe) public static func secondary(text: Swift.String? = nil, backgroundColor: UIKit.UIColor? = .clear, disabledBackgroundColor: UIKit.UIColor? = .clear, textColor: UIKit.UIColor? = Constants.darkerBlack, disabledTextColor: UIKit.UIColor? = Constants.defaultDisabledTextColor, imageColor: UIKit.UIColor? = Constants.defaultTextColor, font: UIKit.UIFont? = Constants.defaultFont, image: UIKit.UIImage? = nil, isEnabled: Swift.Bool = true) -> CampusDigitalUIResources.CampusDigitalButton
+  @_Concurrency.MainActor(unsafe) public static func underline(text: Swift.String? = nil, backgroundColor: UIKit.UIColor? = .clear, textColor: UIKit.UIColor? = .darkerBlack, font: UIKit.UIFont? = Constants.defaultUnderlineFont) -> CampusDigitalUIResources.CampusDigitalButton
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CustomSegmentedControl : UIKit.UISegmentedControl {
+  @_Concurrency.MainActor(unsafe) public init(height: CoreFoundation.CGFloat, selectedColor: UIKit.UIColor, unselectedColor: UIKit.UIColor, selectedFont: UIKit.UIFont, unselectedFont: UIKit.UIFont)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) public func setUpSegmentedControl(items: [Swift.String], selectedSegmentIndex: Swift.Int = 0)
+  @objc deinit
+}
+extension UIKit.UILabel {
+  @_Concurrency.MainActor(unsafe) public static func height(for text: Swift.String, label: UIKit.UILabel, width: CoreFoundation.CGFloat) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) public static func width(for text: Swift.String, label: UIKit.UILabel, height: CoreFoundation.CGFloat) -> CoreFoundation.CGFloat
+}
+public struct DefaultColorConstants {
+  public static let defaultColorHexadecimal: Swift.String
+  public static let defaultColor: UIKit.UIColor
+}
+extension UIKit.UIColor {
+  public func getHexString() -> Swift.String
+  convenience public init?(hexadecimal: Swift.String)
+}
+extension UIKit.UIImageView {
+  @_Concurrency.MainActor(unsafe) public func makeRounded()
+  @_Concurrency.MainActor(unsafe) public func load(imageData: Foundation.Data?, makeRounded: Swift.Bool = true, tintColor: UIKit.UIColor? = nil, completion: (() -> Swift.Void)? = nil)
+}
+extension UIKit.UIColor {
+  public static var darkGrey: UIKit.UIColor? {
+    get
+  }
+  public static var lightGrey: UIKit.UIColor? {
+    get
+  }
+  public static var lighterGrey: UIKit.UIColor? {
+    get
+  }
+  public static var grey4: UIKit.UIColor? {
+    get
+  }
+  public static var greyDisabled: UIKit.UIColor? {
+    get
+  }
+  public static var darkBlack: UIKit.UIColor? {
+    get
+  }
+  public static var darkerBlack: UIKit.UIColor? {
+    get
+  }
+  public static var mediumGrey: UIKit.UIColor? {
+    get
+  }
+  public static var darkerNeutralWhite: UIKit.UIColor? {
+    get
+  }
+  public static var pureWhite: UIKit.UIColor? {
+    get
+  }
+  public static var blueButton: UIKit.UIColor? {
+    get
+  }
+  public static var neutralWhite: UIKit.UIColor? {
+    get
+  }
+  public static var blueInfo: UIKit.UIColor? {
+    get
+  }
+  public static var neutralCard: UIKit.UIColor? {
+    get
+  }
+  public static var neutralCard20: UIKit.UIColor? {
+    get
+  }
+  public static var neutralCard3: UIKit.UIColor? {
+    get
+  }
+  public static var blueSupport: UIKit.UIColor? {
+    get
+  }
+  public static var defaultShadow: UIKit.UIColor? {
+    get
+  }
+}
+public protocol ImageCache {
+  func loadImage(from url: Swift.String, completion: @escaping (Foundation.Data?) -> Swift.Void)
+  func cache(data: Foundation.Data, for url: Swift.String)
+  func removeCache()
+}
+public struct ImageCacheImpl {
+  public init(cache: Foundation.NSCache<Foundation.NSString, Foundation.NSData>, queue: Dispatch.DispatchQueue = DispatchQueue(label: "image_cache"))
+}
+extension CampusDigitalUIResources.ImageCacheImpl : CampusDigitalUIResources.ImageCache {
+  public func loadImage(from url: Swift.String, completion: @escaping (Foundation.Data?) -> Swift.Void)
+  public func cache(data: Foundation.Data, for url: Swift.String)
+  public func removeCache()
+}
+public protocol CheckBoxViewDelegate : UIKit.UITextViewDelegate {
+  func checkBoxDidChange(_ checkBoxItem: CampusDigitalUIResources.CheckBoxItem)
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class CheckBoxView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public init(frame: CoreFoundation.CGRect = .zero, checkBoxItem: CampusDigitalUIResources.CheckBoxItem, delegate: any CampusDigitalUIResources.CheckBoxViewDelegate)
+  @objc deinit
+}
+extension CampusDigitalUIResources.CheckBoxView {
+  @_Concurrency.MainActor(unsafe) final public func setCheckBoxIsSelected(_ isSelected: Swift.Bool)
+}
+public enum WebViewMethod {
+  case publicWeb
+  case privateWeb
+  public static func == (a: CampusDigitalUIResources.WebViewMethod, b: CampusDigitalUIResources.WebViewMethod) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class CampusDigitalVC : UIKit.UIViewController, UIKit.UIGestureRecognizerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func becomeFirstResponder() -> Swift.Bool
+  @nonobjc @_Concurrency.MainActor(unsafe) public func hideKeyboardWhenTappedAround()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public struct CampusDigitalWebViewModel {
+  public let url: Swift.String
+  public let title: Swift.String
+  public let requestHeaders: [Swift.String : Swift.String]?
+  public let localStorage: [Swift.String : Swift.String]?
+  public let httpMethod: Swift.String?
+  public let accessTokenExpiration: Swift.Int?
+  public let webViewMethod: CampusDigitalUIResources.WebViewMethod
+  public init(url: Swift.String, title: Swift.String, requestHeaders: [Swift.String : Swift.String]? = nil, localStorage: [Swift.String : Swift.String]? = nil, httpMethod: Swift.String? = nil, accessTokenExpiration: Swift.Int? = nil, webViewMethod: CampusDigitalUIResources.WebViewMethod = .publicWeb)
+}
+extension CampusDigitalUIResources.CampusDigitalWebViewModel : Swift.Equatable {
+  public static func == (a: CampusDigitalUIResources.CampusDigitalWebViewModel, b: CampusDigitalUIResources.CampusDigitalWebViewModel) -> Swift.Bool
+}
+public protocol ThemeColors : AnyObject {
+  var mainColor: UIKit.UIColor { get }
+  var mainColorMedium: UIKit.UIColor { get }
+  var mainColorLight: UIKit.UIColor { get }
+  var mainColorExtraLight: UIKit.UIColor { get }
+  var black: UIKit.UIColor { get }
+  var white: UIKit.UIColor { get }
+  var lightGray: UIKit.UIColor { get }
+  var disabled: UIKit.UIColor { get }
+  var darkGray: UIKit.UIColor { get }
+  var gray2: UIKit.UIColor { get }
+  var gray4: UIKit.UIColor { get }
+  var veryLightPink: UIKit.UIColor { get }
+  var disabledBorderImput: UIKit.UIColor { get }
+  func colorOrBlackIfConstrastOverWhiteIsLow(color: UIKit.UIColor) -> UIKit.UIColor
+}
+extension CampusDigitalUIResources.CampusDigitalWebViewVC : WebKit.WKUIDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
+}
+extension CampusDigitalUIResources.CampusDigitalWebViewVC : WebKit.WKNavigationDelegate {
+  #if compiler(>=5.3) && $AsyncAwait
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction) async -> WebKit.WKNavigationActionPolicy
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationResponse: WebKit.WKNavigationResponse) async -> WebKit.WKNavigationResponsePolicy
+  #endif
+}
+extension Swift.String {
+  public func convertHtmlToAttributedStringWithCSS(font: UIKit.UIFont? = nil, textColor: UIKit.UIColor? = nil) -> Foundation.NSMutableAttributedString?
+}
+extension UIKit.UIImage {
+  public static var chevronDoubleUpIcon: UIKit.UIImage? {
+    get
+  }
+  public static var chevronDoubleDownIcon: UIKit.UIImage? {
+    get
+  }
+  public static var screenshotIcon: UIKit.UIImage? {
+    get
+  }
+  public static var infoIcon: UIKit.UIImage? {
+    get
+  }
+  public static var defaultErrorIcon: UIKit.UIImage? {
+    get
+  }
+  public static var closeIcon: UIKit.UIImage? {
+    get
+  }
+  public static var connectionIcon: UIKit.UIImage? {
+    get
+  }
+}
+public enum WebViewError : Swift.Error {
+  case entityTokenExpired(statusCode: Swift.Int, body: Swift.String)
+}
+extension CampusDigitalUIResources.WebViewError : Swift.Equatable {
+  public static func == (a: CampusDigitalUIResources.WebViewError, b: CampusDigitalUIResources.WebViewError) -> Swift.Bool
+}
+extension UIKit.UITableViewCell {
+  @_Concurrency.MainActor(unsafe) public func enable(on: Swift.Bool)
+}
+public struct ResponsiveLayout {
+  public init()
+  public func scaledUsingBaseHeight(from currentHeight: CoreFoundation.CGFloat) -> CoreFoundation.CGFloat
+  public func scaledUsingBaseWidth(from currentWidth: CoreFoundation.CGFloat) -> CoreFoundation.CGFloat
+}
+extension Swift.String {
+  public func range(of text: Swift.String) -> Foundation.NSRange?
+}
+@objc @_Concurrency.MainActor(unsafe) open class StackedVC : CampusDigitalUIResources.CampusDigitalVC {
+  @_Concurrency.MainActor(unsafe) public var scrollView: UIKit.UIScrollView {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var stackView: UIKit.UIStackView {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var useDirectionalMargins: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public let mainColor: UIKit.UIColor?
+  @_Concurrency.MainActor(unsafe) public init(mainColor: UIKit.UIColor?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @objc deinit
+}
+extension CampusDigitalUIResources.StackedVC {
+  @_Concurrency.MainActor(unsafe) public func addStackedView(view: UIKit.UIView)
+  @_Concurrency.MainActor(unsafe) public func addStackedViews(views: [UIKit.UIView])
+  @_Concurrency.MainActor(unsafe) public func removeStackedView(view: UIKit.UIView)
+  @_Concurrency.MainActor(unsafe) public func insertStackedView(view: UIKit.UIView, at index: Swift.Int)
+}
+public protocol RadioButtonDelegate : AnyObject {
+  func buttonSelected(model: CampusDigitalUIResources.RadioButtonModel)
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class RadioButton : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var intrinsicContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @objc deinit
+}
+public struct CampusDigitalErrorModel {
+  public struct DefaultConstants {
+    public static let defaultIcon: UIKit.UIImage?
+    public static let defaultIconBackgroundColor: UIKit.UIColor?
+  }
+  public init(icon: UIKit.UIImage? = DefaultConstants.defaultIcon, iconBackgroundColor: UIKit.UIColor? = DefaultConstants.defaultIconBackgroundColor, title: Swift.String, mainError: CampusDigitalUIResources.CampusDigitalMainError? = nil, additionalErrorInfo: CampusDigitalUIResources.CampusDigitalAdditionalErrorInfo, closeAction: (() -> Swift.Void)? = nil)
+}
+extension CampusDigitalUIResources.CampusDigitalErrorModel : Swift.Equatable {
+  public static func == (lhs: CampusDigitalUIResources.CampusDigitalErrorModel, rhs: CampusDigitalUIResources.CampusDigitalErrorModel) -> Swift.Bool
+}
+public protocol EntityTokenValidator {
+  func isValid(accessTokenExpiration: Swift.Int) -> Swift.Bool
+}
+public struct EntityTokenValidatorImpl {
+  public init()
+}
+extension CampusDigitalUIResources.EntityTokenValidatorImpl : CampusDigitalUIResources.EntityTokenValidator {
+  public func isValid(accessTokenExpiration: Swift.Int) -> Swift.Bool
+}
+public enum CampusDigitalButtonStyle {
+  case primary
+  case secondary
+  case secondaryBlue
+  case underline
+  public static func == (a: CampusDigitalUIResources.CampusDigitalButtonStyle, b: CampusDigitalUIResources.CampusDigitalButtonStyle) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension UIKit.UIColor {
+  public var medium: UIKit.UIColor {
+    get
+  }
+  public var light: UIKit.UIColor {
+    get
+  }
+  public var extraLight: UIKit.UIColor {
+    get
+  }
+  public func getReadableColor() -> UIKit.UIColor
+  public var isReadableOnWhite: Swift.Bool {
+    get
+  }
+  public static func contrastRatio(between color1: UIKit.UIColor, and color2: UIKit.UIColor) -> CoreFoundation.CGFloat
+  public func contrastRatio(with color: UIKit.UIColor) -> CoreFoundation.CGFloat
+  public func adjust(colorComponent: CoreFoundation.CGFloat) -> CoreFoundation.CGFloat
+  public func luminance() -> CoreFoundation.CGFloat
+}
+extension UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public func startProgress()
+  @_Concurrency.MainActor(unsafe) public func hideProgress()
+}
+public enum FontStyle : Swift.String {
+  case black
+  case blackItalic
+  case bold
+  case boldItalic
+  case extraLight
+  case extraLightItalic
+  case italic
+  case light
+  case lightItalic
+  case regular
+  case semiBold
+  case semiBoldItalic
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum FontSize : Swift.Int {
+  case sizeS
+  case sizeM
+  case sizeL
+  case sizeXL
+  case sizeXXL
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension UIKit.UIFont {
+  public static var regularS: UIKit.UIFont {
+    get
+  }
+  public static var regularM: UIKit.UIFont {
+    get
+  }
+  public static var regularL: UIKit.UIFont {
+    get
+  }
+  public static var regularXL: UIKit.UIFont {
+    get
+  }
+  public static var regularXXL: UIKit.UIFont {
+    get
+  }
+  public static var boldS: UIKit.UIFont {
+    get
+  }
+  public static var boldM: UIKit.UIFont {
+    get
+  }
+  public static var boldL: UIKit.UIFont {
+    get
+  }
+  public static var boldXL: UIKit.UIFont {
+    get
+  }
+  public static var boldXXL: UIKit.UIFont {
+    get
+  }
+  public static var semiBoldS: UIKit.UIFont {
+    get
+  }
+  public static var semiBoldM: UIKit.UIFont {
+    get
+  }
+  public static var semiBoldL: UIKit.UIFont {
+    get
+  }
+  public static var semiBoldXL: UIKit.UIFont {
+    get
+  }
+  public static var semiBoldXXL: UIKit.UIFont {
+    get
+  }
+  public static var italicS: UIKit.UIFont {
+    get
+  }
+  public static var italicM: UIKit.UIFont {
+    get
+  }
+  public static var italicL: UIKit.UIFont {
+    get
+  }
+  public static var italicXL: UIKit.UIFont {
+    get
+  }
+  public static var italicXXL: UIKit.UIFont {
+    get
+  }
+  public static var semiBoldItalicS: UIKit.UIFont {
+    get
+  }
+  public static var semiBoldItalicM: UIKit.UIFont {
+    get
+  }
+  public static var semiBoldItalicL: UIKit.UIFont {
+    get
+  }
+  public static var semiBoldItalicXL: UIKit.UIFont {
+    get
+  }
+  public static var semiBoldItalicXXL: UIKit.UIFont {
+    get
+  }
+  public static func customFont(style: CampusDigitalUIResources.FontStyle, size: Swift.Int) -> UIKit.UIFont
+}
+extension UIKit.UIImage {
+  public static func render(size: CoreFoundation.CGSize, _ draw: () -> Swift.Void) -> UIKit.UIImage?
+  public static func make(size: CoreFoundation.CGSize, color: UIKit.UIColor) -> UIKit.UIImage?
+  public func imageWithColor(color: UIKit.UIColor?) -> UIKit.UIImage?
+}
+public protocol CampusDigitalWebViewRouter {
+  func createModule(with model: CampusDigitalUIResources.CampusDigitalWebViewModel) -> UIKit.UIViewController
+  func handleEntityTokenExpired(with error: CampusDigitalUIResources.WebViewError)
+}
+public struct CampusDigitalWebViewRouterImpl {
+  public init(errorNotifier: (any CampusDigitalUIResources.WebViewErrorNotifier)? = nil)
+}
+extension CampusDigitalUIResources.CampusDigitalWebViewRouterImpl : CampusDigitalUIResources.CampusDigitalWebViewRouter {
+  public func createModule(with model: CampusDigitalUIResources.CampusDigitalWebViewModel) -> UIKit.UIViewController
+  public func handleEntityTokenExpired(with error: CampusDigitalUIResources.WebViewError)
+}
+public struct CampusDigitalMainError {
+  public init(description: Swift.String, mainButton: CampusDigitalUIResources.CampusDigitalErrorButton)
+}
+extension CampusDigitalUIResources.CampusDigitalMainError : Swift.Equatable {
+  public static func == (a: CampusDigitalUIResources.CampusDigitalMainError, b: CampusDigitalUIResources.CampusDigitalMainError) -> Swift.Bool
+}
+public enum HorizontalLocation {
+  case left
+  case right
+  public static func == (a: CampusDigitalUIResources.HorizontalLocation, b: CampusDigitalUIResources.HorizontalLocation) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension UIKit.UILabel {
+  @_Concurrency.MainActor(unsafe) public static func commonLabel(font: UIKit.UIFont?, numberOfLines: Swift.Int, textColor: UIKit.UIColor?, textAlignment: UIKit.NSTextAlignment, text: Swift.String? = nil, attributedText: Foundation.NSAttributedString? = nil) -> UIKit.UILabel
+  @_Concurrency.MainActor(unsafe) public func addIcon(location: CampusDigitalUIResources.HorizontalLocation, icon: UIKit.UIImage?, iconHeight: CoreFoundation.CGFloat, iconWidth: CoreFoundation.CGFloat)
+}
+public struct CampusDigitalErrorButton {
+  public init(style: CampusDigitalUIResources.CampusDigitalButtonStyle = .primary, title: Swift.String, action: @escaping () -> Swift.Void)
+}
+extension CampusDigitalUIResources.CampusDigitalErrorButton : Swift.Equatable {
+  public static func == (lhs: CampusDigitalUIResources.CampusDigitalErrorButton, rhs: CampusDigitalUIResources.CampusDigitalErrorButton) -> Swift.Bool
+}
+extension UIKit.UIImageView {
+  @_Concurrency.MainActor(unsafe) public static func commonImageView(image: UIKit.UIImage? = nil, contentMode: UIKit.UIView.ContentMode = .scaleAspectFit, backgroundColor: UIKit.UIColor? = .clear, tintColor: UIKit.UIColor? = nil, isUserInteractionEnabled: Swift.Bool = false) -> UIKit.UIImageView
+}
+public struct CampusDigitalAdditionalInfo {
+  public init(device: UIKit.UIDevice = .current, errorName: Swift.String? = nil, appVersion: CampusDigitalUIResources.CampusDigitalVersionInfo? = nil, sdksVersions: [CampusDigitalUIResources.CampusDigitalVersionInfo]? = nil)
+}
+extension CampusDigitalUIResources.CampusDigitalAdditionalInfo : Swift.Equatable {
+  public static func == (a: CampusDigitalUIResources.CampusDigitalAdditionalInfo, b: CampusDigitalUIResources.CampusDigitalAdditionalInfo) -> Swift.Bool
+}
+public protocol CampusDigitalErrorBuilder {
+  func buildDefaultError(additionalInfo: CampusDigitalUIResources.CampusDigitalAdditionalInfo, additionalButtonAction: @escaping () -> Swift.Void, mainButtonAction: @escaping () -> Swift.Void, closeAction: @escaping () -> Swift.Void) -> CampusDigitalUIResources.CampusDigitalErrorModel
+  func buildDefaultRetryError(additionalInfo: CampusDigitalUIResources.CampusDigitalAdditionalInfo, mainButtonAction: @escaping () -> Swift.Void) -> CampusDigitalUIResources.CampusDigitalErrorModel
+  func buildDefaultNotResolveError(additionalInfo: CampusDigitalUIResources.CampusDigitalAdditionalInfo, mainButtonAction: @escaping () -> Swift.Void) -> CampusDigitalUIResources.CampusDigitalErrorModel
+  func buildDefaultSessionError(additionalInfo: CampusDigitalUIResources.CampusDigitalAdditionalInfo, mainButtonAction: @escaping () -> Swift.Void) -> CampusDigitalUIResources.CampusDigitalErrorModel
+  func buildDefaultDataError(additionalInfo: CampusDigitalUIResources.CampusDigitalAdditionalInfo, additionalButtonAction: @escaping () -> Swift.Void) -> CampusDigitalUIResources.CampusDigitalErrorModel
+  func buildConnectionError(additionalInfo: CampusDigitalUIResources.CampusDigitalAdditionalInfo, mainButtonAction: @escaping () -> Swift.Void) -> CampusDigitalUIResources.CampusDigitalErrorModel
+}
+public struct CampusDigitalErrorBuilderImpl {
+  public init()
+}
+extension CampusDigitalUIResources.CampusDigitalErrorBuilderImpl : CampusDigitalUIResources.CampusDigitalErrorBuilder {
+  public func buildDefaultError(additionalInfo: CampusDigitalUIResources.CampusDigitalAdditionalInfo, additionalButtonAction: @escaping () -> Swift.Void, mainButtonAction: @escaping () -> Swift.Void, closeAction: @escaping () -> Swift.Void) -> CampusDigitalUIResources.CampusDigitalErrorModel
+  public func buildDefaultRetryError(additionalInfo: CampusDigitalUIResources.CampusDigitalAdditionalInfo, mainButtonAction: @escaping () -> Swift.Void) -> CampusDigitalUIResources.CampusDigitalErrorModel
+  public func buildDefaultNotResolveError(additionalInfo: CampusDigitalUIResources.CampusDigitalAdditionalInfo, mainButtonAction: @escaping () -> Swift.Void) -> CampusDigitalUIResources.CampusDigitalErrorModel
+  public func buildDefaultSessionError(additionalInfo: CampusDigitalUIResources.CampusDigitalAdditionalInfo, mainButtonAction: @escaping () -> Swift.Void) -> CampusDigitalUIResources.CampusDigitalErrorModel
+  public func buildDefaultDataError(additionalInfo: CampusDigitalUIResources.CampusDigitalAdditionalInfo, additionalButtonAction: @escaping () -> Swift.Void) -> CampusDigitalUIResources.CampusDigitalErrorModel
+  public func buildConnectionError(additionalInfo: CampusDigitalUIResources.CampusDigitalAdditionalInfo, mainButtonAction: @escaping () -> Swift.Void) -> CampusDigitalUIResources.CampusDigitalErrorModel
+}
+extension UIKit.UIScrollView {
+  @_Concurrency.MainActor(unsafe) public static func commonScrollView(delegate: (any UIKit.UIScrollViewDelegate)? = nil, backgroundColor: UIKit.UIColor = .clear, contentMode: UIKit.UIView.ContentMode = .top) -> UIKit.UIScrollView
+}
+extension UIKit.UIButton {
+  @_Concurrency.MainActor(unsafe) public static func commonButton(backgroundColor: UIKit.UIColor?, textColor: UIKit.UIColor?, font: UIKit.UIFont?, cornerRadius: CoreFoundation.CGFloat) -> UIKit.UIButton
+}
+public struct CheckBoxItem {
+  public let identifier: Swift.String
+  public let attributedText: Foundation.NSAttributedString
+  public var isSelected: Swift.Bool
+  public let required: Swift.Bool
+  public init(identifier: Swift.String, attributedText: Foundation.NSAttributedString, isSelected: Swift.Bool, required: Swift.Bool)
+}
+extension UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public var isModal: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public func setUpCampusDigitalNavigationBarStyle(tintColor: UIKit.UIColor? = .darkerBlack, backgroundColor: UIKit.UIColor? = .darkerNeutralWhite, titleTextColor: UIKit.UIColor? = .mediumGrey, dismissSelector: ObjectiveC.Selector? = nil, backAction: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) public func setUpNavigationBarStyle(with tintColor: UIKit.UIColor?, backgroundColor: UIKit.UIColor? = .darkerNeutralWhite, titleTextColor: UIKit.UIColor? = .mediumGrey, font: UIKit.UIFont? = nil, isOpaque: Swift.Bool = true, isTranslucent: Swift.Bool = false)
+  @_Concurrency.MainActor(unsafe) public func removeChildren()
+  @_Concurrency.MainActor(unsafe) public func dispatchAlert(title: Swift.String, message: Swift.String, buttonTitle: Swift.String, handler: @escaping (() -> Swift.Void))
+  @_Concurrency.MainActor(unsafe) public func remove(lastView: UIKit.UIView)
+  @_Concurrency.MainActor(unsafe) public func embed(_ viewController: UIKit.UIViewController, inView view: UIKit.UIView, lastController: UIKit.UIViewController?)
+  @_Concurrency.MainActor(unsafe) public func showSnackBar(text: Swift.String, withClose: Swift.Bool = false)
+  @_Concurrency.MainActor(unsafe) public func showCustomSnackBar(model: CampusDigitalUIResources.SnackBarModel)
+}
+public struct URLOpener {
+  public init(application: any CampusDigitalUIResources.URLOpenerProtocol = UIApplication.shared)
+}
+extension CampusDigitalUIResources.URLOpener : CampusDigitalUIResources.URLOpenerProtocol {
+  public func canOpenURL(_ url: Foundation.URL) -> Swift.Bool
+  public func open(_ url: Foundation.URL, options: [UIKit.UIApplication.OpenExternalURLOptionsKey : Any], completionHandler completion: ((Swift.Bool) -> Swift.Void)?)
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class ButtonWithInsets : UIKit.UIButton {
+  @_Concurrency.MainActor(unsafe) required public init(top: CoreFoundation.CGFloat = 0.0, bottom: CoreFoundation.CGFloat = 0.0, left: CoreFoundation.CGFloat = 0.0, right: CoreFoundation.CGFloat = 0.0)
+  @_Concurrency.MainActor(unsafe) @objc override final public var intrinsicContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @objc deinit
+}
+extension UIKit.UIControl {
+  @_Concurrency.MainActor(unsafe) public static var commonControlView: UIKit.UIControl {
+    get
+  }
+}
+public protocol URLOpenerProtocol {
+  func canOpenURL(_ url: Foundation.URL) -> Swift.Bool
+  func open(_ url: Foundation.URL, options: [UIKit.UIApplication.OpenExternalURLOptionsKey : Any], completionHandler completion: ((Swift.Bool) -> Swift.Void)?)
+}
+extension UIKit.UIApplication : CampusDigitalUIResources.URLOpenerProtocol {
+}
+extension Swift.Decodable {
+  public init?(_ object: Any)
+}
+extension CampusDigitalUIResources.ImageScaleFactor : Swift.Hashable {}
+extension CampusDigitalUIResources.ImageDownloaderError : Swift.Hashable {}
+extension CampusDigitalUIResources.WebViewMethod : Swift.Equatable {}
+extension CampusDigitalUIResources.WebViewMethod : Swift.Hashable {}
+extension CampusDigitalUIResources.CampusDigitalButtonStyle : Swift.Equatable {}
+extension CampusDigitalUIResources.CampusDigitalButtonStyle : Swift.Hashable {}
+extension CampusDigitalUIResources.FontStyle : Swift.Equatable {}
+extension CampusDigitalUIResources.FontStyle : Swift.Hashable {}
+extension CampusDigitalUIResources.FontStyle : Swift.RawRepresentable {}
+extension CampusDigitalUIResources.FontSize : Swift.Equatable {}
+extension CampusDigitalUIResources.FontSize : Swift.Hashable {}
+extension CampusDigitalUIResources.FontSize : Swift.RawRepresentable {}
+extension CampusDigitalUIResources.HorizontalLocation : Swift.Equatable {}
+extension CampusDigitalUIResources.HorizontalLocation : Swift.Hashable {}

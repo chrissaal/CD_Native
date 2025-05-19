@@ -36,5 +36,9 @@ target 'NativeSampleApp' do
       :mac_catalyst_enabled => false,
       # :ccache_enabled => true
     )
+    installer.pods_project.targets.each do |target|
+      __apply_Xcode_12_5_M1_post_install_workaround(installer)
+      "sed -i 's/typedef uint8_t clockid_t;//' ${SRCROOT}/Pods/RCT-Folly/folly/portability/Time.h"
+      end
   end
 end

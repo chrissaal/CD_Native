@@ -1,0 +1,619 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name CampusDigitalServicesSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import CampusDigitalAnalytics
+import CampusDigitalNetworkSDK
+import CampusDigitalUIResources
+import DeveloperToolsSupport
+import Foundation
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public struct CustomerRequestTypeOutput : CampusDigitalNetworkSDK.ServiceResponse {
+  public typealias DataType = [CampusDigitalServicesSDK.CustomerRequestTypeDataItem]
+  public let result: CampusDigitalNetworkSDK.ResultModel
+  public let data: [CampusDigitalServicesSDK.CustomerRequestTypeDataItem]
+  public init(result: CampusDigitalNetworkSDK.ResultModel, data: [CampusDigitalServicesSDK.CustomerRequestTypeDataItem])
+}
+extension CampusDigitalServicesSDK.CustomerRequestTypeOutput : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension CampusDigitalServicesSDK.CustomerRequestTypeOutput : Swift.Equatable {
+  public static func == (a: CampusDigitalServicesSDK.CustomerRequestTypeOutput, b: CampusDigitalServicesSDK.CustomerRequestTypeOutput) -> Swift.Bool
+}
+public struct CompletedURLTypeModel : CampusDigitalNetworkSDK.ServiceResponse {
+  public typealias DataType = CampusDigitalServicesSDK.CompletedURLType
+  public let result: CampusDigitalNetworkSDK.ResultModel
+  public let data: CampusDigitalServicesSDK.CompletedURLType
+  public init(result: CampusDigitalNetworkSDK.ResultModel, data: CampusDigitalServicesSDK.CompletedURLType)
+}
+extension CampusDigitalServicesSDK.CompletedURLTypeModel : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ServiceDetailModel : CampusDigitalNetworkSDK.ServiceResponse {
+  public typealias DataType = CampusDigitalServicesSDK.GenericServiceDetails
+  public var result: CampusDigitalNetworkSDK.ResultModel
+  public var data: CampusDigitalServicesSDK.GenericServiceDetails
+  public init(result: CampusDigitalNetworkSDK.ResultModel, data: CampusDigitalServicesSDK.GenericServiceDetails)
+}
+extension CampusDigitalServicesSDK.ServiceDetailModel : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension CampusDigitalServicesSDK.ServiceDetailModel : Swift.Equatable {
+  public static func == (a: CampusDigitalServicesSDK.ServiceDetailModel, b: CampusDigitalServicesSDK.ServiceDetailModel) -> Swift.Bool
+}
+public typealias CampusDigitalServices = CampusDigitalServicesSDK.CleanPersistence & CampusDigitalServicesSDK.GetBannersCarousel & CampusDigitalServicesSDK.GetCampusDigitalServicesAPI & CampusDigitalServicesSDK.ShowBannerContent & CampusDigitalServicesSDK.ShowOneTimeUrl & CampusDigitalServicesSDK.ShowSantanderAdvantages & CampusDigitalServicesSDK.ShowServiceContent
+public protocol GetCampusDigitalServicesAPI {
+  var campusDigitalServicesAPI: any CampusDigitalServicesSDK.GetBannersList & CampusDigitalServicesSDK.GetCredentialServiceDetail & CampusDigitalServicesSDK.GetOneTimeUrl & CampusDigitalServicesSDK.GetServiceDetail & CampusDigitalServicesSDK.GetServiceList & CampusDigitalServicesSDK.GetVersion & CampusDigitalServicesSDK.UpdateUniversiaToken { get }
+}
+public protocol ShowServiceContent {
+  #if compiler(>=5.3) && $AsyncAwait
+  func showServiceContent(for serviceDetail: CampusDigitalServicesSDK.GenericServiceDetail, from currentVC: UIKit.UIViewController) async throws
+  #endif
+}
+public protocol GetBannersCarousel {
+  func getBannersCarousel(delegate: any CampusDigitalServicesSDK.BannersCarouselDelegate, from parentVC: UIKit.UIViewController) -> any CampusDigitalServicesSDK.BannersCarousel
+}
+public protocol ShowSantanderAdvantages {
+  var isSantanderAdvantagesEnabled: Swift.Bool { get }
+  var userHasSantanderAdvantages: Swift.Bool { get }
+  #if compiler(>=5.3) && $AsyncAwait
+  func showSantanderAdvantagesMenu(from currentVC: UIKit.UIViewController) async throws
+  #endif
+}
+public protocol CleanPersistence {
+  func cleanPersistence()
+}
+public protocol ShowBannerContent {
+  #if compiler(>=5.3) && $AsyncAwait
+  func showBannerContent(from currentVC: UIKit.UIViewController, banner: CampusDigitalServicesSDK.CampusDigitalBanner) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func getBannerContentVC(from currentVC: UIKit.UIViewController, banner: CampusDigitalServicesSDK.CampusDigitalBanner) async throws -> UIKit.UIViewController?
+  #endif
+}
+public protocol ShowOneTimeUrl {
+  #if compiler(>=5.3) && $AsyncAwait
+  func showOneTimeUrl(from currentVC: UIKit.UIViewController, openUrlDetail: CampusDigitalServicesSDK.CampusDigitalOneTimeUrl) async throws
+  #endif
+}
+@_hasMissingDesignatedInitializers public class CampusDigitalServicesImpl {
+  #if compiler(>=5.3) && $AsyncAwait
+  public static func campusDigitalServices(with config: CampusDigitalServicesSDK.CampusDigitalServicesConfig) async throws -> any CampusDigitalServicesSDK.CleanPersistence & CampusDigitalServicesSDK.GetBannersCarousel & CampusDigitalServicesSDK.GetCampusDigitalServicesAPI & CampusDigitalServicesSDK.ShowBannerContent & CampusDigitalServicesSDK.ShowOneTimeUrl & CampusDigitalServicesSDK.ShowSantanderAdvantages & CampusDigitalServicesSDK.ShowServiceContent
+  #endif
+  @objc deinit
+}
+public protocol BannersCarouselDelegate : AnyObject {
+  func bannerSelected(bannerDetailVC: UIKit.UIViewController)
+  func carouselBannerVisibilityUpdated(_ isHidden: Swift.Bool)
+}
+public protocol BannersCarousel : UIKit.UIView {
+  func refreshBannersCarousel(with filter: CampusDigitalServicesSDK.BannerFilter)
+  func filterBannersCarousel(with filter: CampusDigitalServicesSDK.BannerFilter)
+}
+public enum ServiceSize : Swift.String, Swift.Codable {
+  case small
+  case medium
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum ServiceKey : Swift.String, Swift.Codable {
+  case credential
+  case debts
+  case web
+  case hid
+  case unhandled
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct Service {
+  public let order: Swift.Int
+  public let name: Swift.String
+  public let serviceName: Swift.String
+  public let key: Swift.String
+  public let size: CampusDigitalServicesSDK.ServiceSize
+  public let type: Swift.String
+  public let contentEmitter: CampusDigitalServicesSDK.LegalTermsType
+  public var serviceKey: CampusDigitalServicesSDK.ServiceKey {
+    get
+  }
+  public init(order: Swift.Int, name: Swift.String, serviceName: Swift.String, key: Swift.String, size: CampusDigitalServicesSDK.ServiceSize, type: Swift.String, contentEmitter: CampusDigitalServicesSDK.LegalTermsType)
+}
+extension CampusDigitalServicesSDK.Service : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension CampusDigitalServicesSDK.Service : Swift.Equatable {
+  public static func == (a: CampusDigitalServicesSDK.Service, b: CampusDigitalServicesSDK.Service) -> Swift.Bool
+}
+public struct CredentialServiceDetails {
+  public let details: CampusDigitalServicesSDK.CredentialServiceDetail
+  public let label: CampusDigitalServicesSDK.ServiceInfoLabel?
+  public init(details: CampusDigitalServicesSDK.CredentialServiceDetail, label: CampusDigitalServicesSDK.ServiceInfoLabel? = nil)
+}
+extension CampusDigitalServicesSDK.CredentialServiceDetails : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension CampusDigitalServicesSDK.CredentialServiceDetails : Swift.Equatable {
+  public static func == (a: CampusDigitalServicesSDK.CredentialServiceDetails, b: CampusDigitalServicesSDK.CredentialServiceDetails) -> Swift.Bool
+}
+extension CampusDigitalServicesSDK.CampusDigitalServicesImpl : CampusDigitalServicesSDK.CleanPersistence {
+  public func cleanPersistence()
+}
+public typealias CampusDigitalServicesAPI = CampusDigitalServicesSDK.GetBannersList & CampusDigitalServicesSDK.GetCredentialServiceDetail & CampusDigitalServicesSDK.GetOneTimeUrl & CampusDigitalServicesSDK.GetServiceDetail & CampusDigitalServicesSDK.GetServiceList & CampusDigitalServicesSDK.GetVersion & CampusDigitalServicesSDK.UpdateUniversiaToken
+public protocol GetServiceList {
+  #if compiler(>=5.3) && $AsyncAwait
+  func getServiceList() async throws -> [CampusDigitalServicesSDK.Service]
+  #endif
+}
+public protocol GetServiceDetail {
+  #if compiler(>=5.3) && $AsyncAwait
+  func getServiceDetail(for serviceKey: Swift.String) async throws -> CampusDigitalServicesSDK.GenericServiceDetails
+  #endif
+}
+public protocol GetOneTimeUrl {
+  #if compiler(>=5.3) && $AsyncAwait
+  func getOneTimeUrl(openUrlDetail: CampusDigitalServicesSDK.CampusDigitalOneTimeUrl) async throws -> CampusDigitalServicesSDK.CompletedURLType
+  #endif
+}
+public protocol GetCredentialServiceDetail {
+  #if compiler(>=5.3) && $AsyncAwait
+  func getCredentialServiceDetail() async throws -> CampusDigitalServicesSDK.CredentialServiceDetails
+  #endif
+}
+public protocol GetVersion {
+  static func getVersion() -> Swift.String
+}
+public protocol CampusDigitalServicesErrorNotifier {
+  func handle(error: CampusDigitalServicesSDK.CampusDigitalServicesError)
+}
+public protocol UpdateUniversiaToken {
+  static func update(universiaToken: Swift.String)
+}
+public protocol GetBannersList {
+  #if compiler(>=5.3) && $AsyncAwait
+  func getBannersList() async throws -> CampusDigitalServicesSDK.CampusDigitalBannersList
+  #endif
+}
+@_hasMissingDesignatedInitializers public class CampusDigitalServicesAPIImpl {
+  @objc deinit
+}
+public struct CredentialServiceDetailModel : CampusDigitalNetworkSDK.ServiceResponse {
+  public typealias DataType = CampusDigitalServicesSDK.CredentialServiceDetails
+  public var result: CampusDigitalNetworkSDK.ResultModel
+  public var data: CampusDigitalServicesSDK.CredentialServiceDetails
+  public init(result: CampusDigitalNetworkSDK.ResultModel, data: CampusDigitalServicesSDK.CredentialServiceDetails)
+}
+extension CampusDigitalServicesSDK.CredentialServiceDetailModel : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension CampusDigitalServicesSDK.CredentialServiceDetailModel : Swift.Equatable {
+  public static func == (a: CampusDigitalServicesSDK.CredentialServiceDetailModel, b: CampusDigitalServicesSDK.CredentialServiceDetailModel) -> Swift.Bool
+}
+public enum BannerFilter {
+  case all
+  case entity
+  case campusBenefits
+  case financial
+  case noFinancial
+  public static func == (a: CampusDigitalServicesSDK.BannerFilter, b: CampusDigitalServicesSDK.BannerFilter) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum OneTimeUrlType : Swift.Codable {
+  case banner
+  case notification
+  case thankYouPage
+  public static func == (a: CampusDigitalServicesSDK.OneTimeUrlType, b: CampusDigitalServicesSDK.OneTimeUrlType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension CampusDigitalServicesSDK.CampusDigitalServicesAPIImpl : CampusDigitalServicesSDK.GetCredentialServiceDetail {
+  #if compiler(>=5.3) && $AsyncAwait
+  public func getCredentialServiceDetail() async throws -> CampusDigitalServicesSDK.CredentialServiceDetails
+  #endif
+}
+public enum SantanderAdvantagesUserError : Swift.Error {
+  case unknown(statusCode: Swift.Int, body: Swift.String)
+  case accessDenied(statusCode: Swift.Int, body: Swift.String)
+  case notFound(statusCode: Swift.Int, body: Swift.String)
+  case internalError(statusCode: Swift.Int, body: Swift.String)
+  case badGateway(statusCode: Swift.Int, body: Swift.String)
+  case badRequest(statusCode: Swift.Int, body: Swift.String)
+  case forbidden(statusCode: Swift.Int, body: Swift.String)
+}
+extension CampusDigitalServicesSDK.SantanderAdvantagesUserError : Swift.Equatable {
+  public static func == (a: CampusDigitalServicesSDK.SantanderAdvantagesUserError, b: CampusDigitalServicesSDK.SantanderAdvantagesUserError) -> Swift.Bool
+}
+extension CampusDigitalServicesSDK.CampusDigitalServicesAPIImpl : CampusDigitalServicesSDK.GetVersion {
+  public static func getVersion() -> Swift.String
+}
+public struct ServiceListModel : CampusDigitalNetworkSDK.ServiceResponse {
+  public typealias DataType = [CampusDigitalServicesSDK.Service]
+  public var result: CampusDigitalNetworkSDK.ResultModel
+  public var data: [CampusDigitalServicesSDK.Service]
+  public init(result: CampusDigitalNetworkSDK.ResultModel, data: [CampusDigitalServicesSDK.Service])
+}
+extension CampusDigitalServicesSDK.ServiceListModel : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension CampusDigitalServicesSDK.ServiceListModel : Swift.Equatable {
+  public static func == (a: CampusDigitalServicesSDK.ServiceListModel, b: CampusDigitalServicesSDK.ServiceListModel) -> Swift.Bool
+}
+public enum CredentialServiceDetailError : Swift.Error {
+  case unknown(statusCode: Swift.Int, body: Swift.String)
+  case invalidRequest(statusCode: Swift.Int, body: Swift.String)
+  case accessDenied(statusCode: Swift.Int, body: Swift.String)
+  case forbidden(statusCode: Swift.Int, body: Swift.String)
+  case notFound(statusCode: Swift.Int, body: Swift.String)
+  case internalError(statusCode: Swift.Int, body: Swift.String)
+  case badGateway(statusCode: Swift.Int, body: Swift.String)
+}
+extension CampusDigitalServicesSDK.CredentialServiceDetailError : Swift.Equatable {
+  public static func == (a: CampusDigitalServicesSDK.CredentialServiceDetailError, b: CampusDigitalServicesSDK.CredentialServiceDetailError) -> Swift.Bool
+}
+public struct GenericServiceDetail {
+  public let icon: CampusDigitalServicesSDK.Icon
+  public let title: Swift.String?
+  public let description: Swift.String?
+  public let status: Swift.String?
+  public let badge: Swift.Int
+  public let contentEmitter: CampusDigitalServicesSDK.LegalTermsType?
+  public init(icon: CampusDigitalServicesSDK.Icon, title: Swift.String? = nil, description: Swift.String? = nil, status: Swift.String? = nil, badge: Swift.Int = 0, contentEmitter: CampusDigitalServicesSDK.LegalTermsType? = nil)
+}
+extension CampusDigitalServicesSDK.GenericServiceDetail : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension CampusDigitalServicesSDK.GenericServiceDetail : Swift.Equatable {
+  public static func == (a: CampusDigitalServicesSDK.GenericServiceDetail, b: CampusDigitalServicesSDK.GenericServiceDetail) -> Swift.Bool
+}
+public struct Icon {
+  public let defaultSize: Swift.String
+  public init(defaultSize: Swift.String)
+}
+extension CampusDigitalServicesSDK.Icon : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension CampusDigitalServicesSDK.Icon : Swift.Equatable {
+  public static func == (a: CampusDigitalServicesSDK.Icon, b: CampusDigitalServicesSDK.Icon) -> Swift.Bool
+}
+public enum GetServicesConfigError : Swift.Error {
+  case unknown(statusCode: Swift.Int, body: Swift.String)
+  case notFound(statusCode: Swift.Int, body: Swift.String)
+  case internalError(statusCode: Swift.Int, body: Swift.String)
+  case badGateway(statusCode: Swift.Int, body: Swift.String)
+  case badRequest(statusCode: Swift.Int, body: Swift.String)
+  case forbidden(statusCode: Swift.Int, body: Swift.String)
+}
+extension CampusDigitalServicesSDK.GetServicesConfigError : Swift.Equatable {
+  public static func == (a: CampusDigitalServicesSDK.GetServicesConfigError, b: CampusDigitalServicesSDK.GetServicesConfigError) -> Swift.Bool
+}
+public enum CampusDigitalServicesError : Swift.Error {
+  case accessDenied(statusCode: Swift.Int, body: Swift.String)
+  case entityTokenExpired(statusCode: Swift.Int, body: Swift.String)
+}
+extension CampusDigitalServicesSDK.CampusDigitalServicesError : Swift.Equatable {
+  public static func == (a: CampusDigitalServicesSDK.CampusDigitalServicesError, b: CampusDigitalServicesSDK.CampusDigitalServicesError) -> Swift.Bool
+}
+extension CampusDigitalServicesSDK.CampusDigitalServicesAPIImpl : CampusDigitalServicesSDK.GetServiceList {
+  #if compiler(>=5.3) && $AsyncAwait
+  public func getServiceList() async throws -> [CampusDigitalServicesSDK.Service]
+  #endif
+}
+public struct CampusDigitalServicesConfig {
+  public init(universiaToken: Swift.String, navigationController: UIKit.UINavigationController, locale: Foundation.Locale = Locale.current, errorNotifier: any CampusDigitalServicesSDK.CampusDigitalServicesErrorNotifier, environment: CampusDigitalNetworkSDK.Environment = EnvironmentConstants.environment)
+}
+public struct ServiceInfoLabel {
+  public let text: Swift.String
+  public let color: Swift.String
+  public init(text: Swift.String, color: Swift.String)
+}
+extension CampusDigitalServicesSDK.ServiceInfoLabel : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension CampusDigitalServicesSDK.ServiceInfoLabel : Swift.Equatable {
+  public static func == (a: CampusDigitalServicesSDK.ServiceInfoLabel, b: CampusDigitalServicesSDK.ServiceInfoLabel) -> Swift.Bool
+}
+public enum ShowContentError : Swift.Error {
+  case unknown(statusCode: Swift.Int, body: Swift.String)
+  case invalidRequest(statusCode: Swift.Int, body: Swift.String)
+  case accessDenied(statusCode: Swift.Int, body: Swift.String)
+  case notFound(statusCode: Swift.Int, body: Swift.String)
+  case internalError(statusCode: Swift.Int, body: Swift.String)
+  case badGateway(statusCode: Swift.Int, body: Swift.String)
+  case santanderAdvantagesUserError(statusCode: Swift.Int, body: Swift.String)
+}
+extension CampusDigitalServicesSDK.ShowContentError : Swift.Equatable {
+  public static func == (a: CampusDigitalServicesSDK.ShowContentError, b: CampusDigitalServicesSDK.ShowContentError) -> Swift.Bool
+}
+public struct CreateCustomerRequestBody {
+  public init(requestId: Swift.String, title: Swift.String, message: Swift.String)
+}
+extension CampusDigitalServicesSDK.CreateCustomerRequestBody : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension CampusDigitalServicesSDK.CreateCustomerRequestBody : Swift.Equatable {
+  public static func == (a: CampusDigitalServicesSDK.CreateCustomerRequestBody, b: CampusDigitalServicesSDK.CreateCustomerRequestBody) -> Swift.Bool
+}
+extension CampusDigitalServicesSDK.CampusDigitalServicesAPIImpl : CampusDigitalServicesSDK.GetBannersList {
+  #if compiler(>=5.3) && $AsyncAwait
+  public func getBannersList() async throws -> CampusDigitalServicesSDK.CampusDigitalBannersList
+  #endif
+}
+public struct ButtonConfig {
+  public let label: Swift.String
+  public let targetUrl: Swift.String
+  public let type: CampusDigitalServicesSDK.TargetType
+  public let refreshUrl: Swift.Bool?
+  public init(identifier: Swift.String? = nil, label: Swift.String, targetUrl: Swift.String, type: CampusDigitalServicesSDK.TargetType, refreshUrl: Swift.Bool? = nil)
+}
+extension CampusDigitalServicesSDK.ButtonConfig : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension CampusDigitalServicesSDK.ButtonConfig : Swift.Equatable {
+  public static func == (a: CampusDigitalServicesSDK.ButtonConfig, b: CampusDigitalServicesSDK.ButtonConfig) -> Swift.Bool
+}
+extension CampusDigitalServicesSDK.CampusDigitalServicesImpl : CampusDigitalServicesSDK.ShowSantanderAdvantages {
+  public var isSantanderAdvantagesEnabled: Swift.Bool {
+    get
+  }
+  public var userHasSantanderAdvantages: Swift.Bool {
+    get
+  }
+  #if compiler(>=5.3) && $AsyncAwait
+  public func showSantanderAdvantagesMenu(from currentVC: UIKit.UIViewController) async throws
+  #endif
+}
+public enum GetBannersListError : Swift.Error {
+  case unknown(statusCode: Swift.Int, body: Swift.String)
+  case accessDenied(statusCode: Swift.Int, body: Swift.String)
+  case internalError(statusCode: Swift.Int, body: Swift.String)
+  case badGateway(statusCode: Swift.Int, body: Swift.String)
+}
+extension CampusDigitalServicesSDK.GetBannersListError : Swift.Equatable {
+  public static func == (a: CampusDigitalServicesSDK.GetBannersListError, b: CampusDigitalServicesSDK.GetBannersListError) -> Swift.Bool
+}
+public enum ServiceListError : Swift.Error {
+  case unknown(statusCode: Swift.Int, body: Swift.String)
+  case invalidRequest(statusCode: Swift.Int, body: Swift.String)
+  case accessDenied(statusCode: Swift.Int, body: Swift.String)
+  case notFound(statusCode: Swift.Int, body: Swift.String)
+  case internalError(statusCode: Swift.Int, body: Swift.String)
+  case badGateway(statusCode: Swift.Int, body: Swift.String)
+}
+extension CampusDigitalServicesSDK.ServiceListError : Swift.Equatable {
+  public static func == (a: CampusDigitalServicesSDK.ServiceListError, b: CampusDigitalServicesSDK.ServiceListError) -> Swift.Bool
+}
+extension CampusDigitalServicesSDK.CampusDigitalServicesAPIImpl : CampusDigitalServicesSDK.UpdateUniversiaToken {
+  public static func update(universiaToken: Swift.String)
+}
+extension CampusDigitalServicesSDK.CampusDigitalServicesImpl : CampusDigitalServicesSDK.GetBannersCarousel {
+  public func getBannersCarousel(delegate: any CampusDigitalServicesSDK.BannersCarouselDelegate, from parentVC: UIKit.UIViewController) -> any CampusDigitalServicesSDK.BannersCarousel
+}
+extension CampusDigitalServicesSDK.CampusDigitalServicesAPIImpl : CampusDigitalServicesSDK.GetOneTimeUrl {
+  #if compiler(>=5.3) && $AsyncAwait
+  public func getOneTimeUrl(openUrlDetail: CampusDigitalServicesSDK.CampusDigitalOneTimeUrl) async throws -> CampusDigitalServicesSDK.CompletedURLType
+  #endif
+}
+extension CampusDigitalServicesSDK.CampusDigitalServicesAPIImpl : CampusDigitalServicesSDK.GetServiceDetail {
+  #if compiler(>=5.3) && $AsyncAwait
+  public func getServiceDetail(for serviceKey: Swift.String) async throws -> CampusDigitalServicesSDK.GenericServiceDetails
+  #endif
+}
+public enum LegalTermsType : Swift.String, Swift.Codable {
+  case financial
+  case noFinancial
+  case none
+  public init(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct CampusDigitalBanner {
+  public let identifier: Swift.String
+  public let name: Swift.String
+  public let image: Swift.String
+  public let position: Swift.Int
+  public let url: Swift.String
+  public let urlType: CampusDigitalServicesSDK.TargetType
+  public let contentEmitter: CampusDigitalServicesSDK.LegalTermsType
+  public let refreshUrl: Swift.Bool?
+  public static var registerFinancial: CampusDigitalServicesSDK.CampusDigitalBanner {
+    get
+  }
+  public static var registerNoFinancial: CampusDigitalServicesSDK.CampusDigitalBanner {
+    get
+  }
+  public init(identifier: Swift.String, name: Swift.String, image: Swift.String, position: Swift.Int, url: Swift.String, urlType: CampusDigitalServicesSDK.TargetType, contentEmitter: CampusDigitalServicesSDK.LegalTermsType, refreshUrl: Swift.Bool? = nil)
+}
+extension CampusDigitalServicesSDK.CampusDigitalBanner : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension CampusDigitalServicesSDK.CampusDigitalBanner : Swift.Equatable {
+  public static func == (a: CampusDigitalServicesSDK.CampusDigitalBanner, b: CampusDigitalServicesSDK.CampusDigitalBanner) -> Swift.Bool
+}
+public struct CustomerRequestTypeDataItem {
+  public let category: Swift.String
+  public let groupName: Swift.String
+  public let requests: [CampusDigitalServicesSDK.CustomerRequestTypeDataItemRequests]
+  public init(category: Swift.String, groupName: Swift.String, requests: [CampusDigitalServicesSDK.CustomerRequestTypeDataItemRequests])
+}
+extension CampusDigitalServicesSDK.CustomerRequestTypeDataItem : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension CampusDigitalServicesSDK.CustomerRequestTypeDataItem : Swift.Equatable {
+  public static func == (a: CampusDigitalServicesSDK.CustomerRequestTypeDataItem, b: CampusDigitalServicesSDK.CustomerRequestTypeDataItem) -> Swift.Bool
+}
+extension CampusDigitalServicesSDK.CampusDigitalServicesAPIImpl {
+  public func cleanImageCache()
+}
+public enum TargetType : Swift.String, Swift.Codable {
+  case `internal`
+  case external
+  public init(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct CustomerRequestTypeDataItemRequests {
+  public let requestId: Swift.String
+  public let requestName: Swift.String
+  public let requestDescription: Swift.String
+  public let requestHelper: Swift.String
+  public init(requestId: Swift.String, requestName: Swift.String, requestDescription: Swift.String, requestHelper: Swift.String)
+}
+extension CampusDigitalServicesSDK.CustomerRequestTypeDataItemRequests : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension CampusDigitalServicesSDK.CustomerRequestTypeDataItemRequests : Swift.Equatable {
+  public static func == (a: CampusDigitalServicesSDK.CustomerRequestTypeDataItemRequests, b: CampusDigitalServicesSDK.CustomerRequestTypeDataItemRequests) -> Swift.Bool
+}
+public struct CampusDigitalOneTimeUrl {
+  public let identifier: Swift.String
+  public let urlType: CampusDigitalServicesSDK.TargetType
+  public let type: CampusDigitalServicesSDK.OneTimeUrlType
+  public init(identifier: Swift.String, urlType: CampusDigitalServicesSDK.TargetType, type: CampusDigitalServicesSDK.OneTimeUrlType)
+}
+extension CampusDigitalServicesSDK.CampusDigitalOneTimeUrl : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension CampusDigitalServicesSDK.CampusDigitalOneTimeUrl : Swift.Equatable {
+  public static func == (a: CampusDigitalServicesSDK.CampusDigitalOneTimeUrl, b: CampusDigitalServicesSDK.CampusDigitalOneTimeUrl) -> Swift.Bool
+}
+public struct CampusDigitalBannersList {
+  public let registerBanners: [CampusDigitalServicesSDK.CampusDigitalBanner]
+  public let entityBanners: [CampusDigitalServicesSDK.CampusDigitalBanner]
+  public let santanderBanners: [CampusDigitalServicesSDK.CampusDigitalBanner]
+  public init(registerBanners: [CampusDigitalServicesSDK.CampusDigitalBanner], entityBanners: [CampusDigitalServicesSDK.CampusDigitalBanner], santanderBanners: [CampusDigitalServicesSDK.CampusDigitalBanner])
+}
+extension CampusDigitalServicesSDK.CampusDigitalBannersList : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension CampusDigitalServicesSDK.CampusDigitalBannersList : Swift.Equatable {
+  public static func == (a: CampusDigitalServicesSDK.CampusDigitalBannersList, b: CampusDigitalServicesSDK.CampusDigitalBannersList) -> Swift.Bool
+}
+public enum EnvironmentConstants {
+  public static var environment: CampusDigitalNetworkSDK.Environment {
+    get
+  }
+}
+public enum ServiceDetailError : Swift.Error {
+  case unknown(statusCode: Swift.Int, body: Swift.String)
+  case invalidRequest(statusCode: Swift.Int, body: Swift.String)
+  case accessDenied(statusCode: Swift.Int, body: Swift.String)
+  case notFound(statusCode: Swift.Int, body: Swift.String)
+  case internalError(statusCode: Swift.Int, body: Swift.String)
+  case badGateway(statusCode: Swift.Int, body: Swift.String)
+}
+extension CampusDigitalServicesSDK.ServiceDetailError : Swift.Equatable {
+  public static func == (a: CampusDigitalServicesSDK.ServiceDetailError, b: CampusDigitalServicesSDK.ServiceDetailError) -> Swift.Bool
+}
+public struct CredentialServiceDetail {
+  public let givenName: Swift.String
+  public let surnames: Swift.String
+  public let photo: Swift.String?
+  public let tuitionNumber: Swift.String
+  public let accessControl: Swift.Bool
+  public let santanderBrandLogo: Swift.Bool
+  public init(givenName: Swift.String, surnames: Swift.String, photo: Swift.String? = nil, tuitionNumber: Swift.String, accessControl: Swift.Bool, santanderBrandLogo: Swift.Bool)
+}
+extension CampusDigitalServicesSDK.CredentialServiceDetail : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension CampusDigitalServicesSDK.CredentialServiceDetail : Swift.Equatable {
+  public static func == (a: CampusDigitalServicesSDK.CredentialServiceDetail, b: CampusDigitalServicesSDK.CredentialServiceDetail) -> Swift.Bool
+}
+public struct GenericServiceDetails {
+  public var details: CampusDigitalServicesSDK.GenericServiceDetail
+  public var label: CampusDigitalServicesSDK.ServiceInfoLabel?
+  public init(details: CampusDigitalServicesSDK.GenericServiceDetail, label: CampusDigitalServicesSDK.ServiceInfoLabel? = nil)
+}
+extension CampusDigitalServicesSDK.GenericServiceDetails : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension CampusDigitalServicesSDK.GenericServiceDetails : Swift.Equatable {
+  public static func == (a: CampusDigitalServicesSDK.GenericServiceDetails, b: CampusDigitalServicesSDK.GenericServiceDetails) -> Swift.Bool
+}
+public struct CompletedURLType {
+  public let url: Swift.String
+  public init(url: Swift.String)
+}
+extension CampusDigitalServicesSDK.CompletedURLType : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension CampusDigitalServicesSDK.CampusDigitalServicesImpl : CampusDigitalServicesSDK.ShowBannerContent {
+  #if compiler(>=5.3) && $AsyncAwait
+  @_Concurrency.MainActor public func showBannerContent(from currentVC: UIKit.UIViewController, banner: CampusDigitalServicesSDK.CampusDigitalBanner) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @_Concurrency.MainActor public func getBannerContentVC(from currentVC: UIKit.UIViewController, banner: CampusDigitalServicesSDK.CampusDigitalBanner) async throws -> UIKit.UIViewController?
+  #endif
+}
+extension CampusDigitalServicesSDK.CampusDigitalServicesImpl : CampusDigitalServicesSDK.ShowServiceContent {
+  #if compiler(>=5.3) && $AsyncAwait
+  @_Concurrency.MainActor public func showServiceContent(for serviceDetail: CampusDigitalServicesSDK.GenericServiceDetail, from currentVC: UIKit.UIViewController) async throws
+  #endif
+}
+extension CampusDigitalServicesSDK.CampusDigitalServicesImpl : CampusDigitalServicesSDK.ShowOneTimeUrl {
+  #if compiler(>=5.3) && $AsyncAwait
+  @_Concurrency.MainActor public func showOneTimeUrl(from currentVC: UIKit.UIViewController, openUrlDetail: CampusDigitalServicesSDK.CampusDigitalOneTimeUrl) async throws
+  #endif
+}
+extension CampusDigitalServicesSDK.CampusDigitalServicesImpl : CampusDigitalServicesSDK.GetCampusDigitalServicesAPI {
+  public var campusDigitalServicesAPI: any CampusDigitalServicesSDK.GetBannersList & CampusDigitalServicesSDK.GetCredentialServiceDetail & CampusDigitalServicesSDK.GetOneTimeUrl & CampusDigitalServicesSDK.GetServiceDetail & CampusDigitalServicesSDK.GetServiceList & CampusDigitalServicesSDK.GetVersion & CampusDigitalServicesSDK.UpdateUniversiaToken {
+    get
+  }
+}
+extension CampusDigitalServicesSDK.ServiceSize : Swift.Equatable {}
+extension CampusDigitalServicesSDK.ServiceSize : Swift.Hashable {}
+extension CampusDigitalServicesSDK.ServiceSize : Swift.RawRepresentable {}
+extension CampusDigitalServicesSDK.ServiceKey : Swift.Equatable {}
+extension CampusDigitalServicesSDK.ServiceKey : Swift.Hashable {}
+extension CampusDigitalServicesSDK.ServiceKey : Swift.RawRepresentable {}
+extension CampusDigitalServicesSDK.BannerFilter : Swift.Equatable {}
+extension CampusDigitalServicesSDK.BannerFilter : Swift.Hashable {}
+extension CampusDigitalServicesSDK.OneTimeUrlType : Swift.Equatable {}
+extension CampusDigitalServicesSDK.OneTimeUrlType : Swift.Hashable {}
+extension CampusDigitalServicesSDK.LegalTermsType : Swift.Equatable {}
+extension CampusDigitalServicesSDK.LegalTermsType : Swift.Hashable {}
+extension CampusDigitalServicesSDK.LegalTermsType : Swift.RawRepresentable {}
+extension CampusDigitalServicesSDK.TargetType : Swift.Equatable {}
+extension CampusDigitalServicesSDK.TargetType : Swift.Hashable {}
+extension CampusDigitalServicesSDK.TargetType : Swift.RawRepresentable {}

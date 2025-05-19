@@ -1,0 +1,4 @@
+framework module CampusDigitalServicesSDK {
+  header "CampusDigitalServicesSDK-Swift.h"
+  requires objc
+}

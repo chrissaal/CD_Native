@@ -1,0 +1,11 @@
+framework module CampusDigitalNetworkSDK {
+  umbrella header "CampusDigitalNetworkSDK.h"
+  export *
+
+  module * { export * }
+}
+
+module CampusDigitalNetworkSDK.Swift {
+  header "CampusDigitalNetworkSDK-Swift.h"
+  requires objc
+}

@@ -1,0 +1,11 @@
+framework module CampusDigitalUIResources {
+  umbrella header "CampusDigitalUIResources.h"
+  export *
+
+  module * { export * }
+}
+
+module CampusDigitalUIResources.Swift {
+  header "CampusDigitalUIResources-Swift.h"
+  requires objc
+}

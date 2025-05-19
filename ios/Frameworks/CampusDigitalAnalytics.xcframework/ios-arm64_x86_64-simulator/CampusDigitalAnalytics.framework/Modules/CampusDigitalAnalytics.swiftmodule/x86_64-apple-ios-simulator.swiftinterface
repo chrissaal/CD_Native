@@ -1,0 +1,70 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name CampusDigitalAnalytics
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AppTrackingTransparency
+@_exported import CampusDigitalAnalytics
+import CampusDigitalNetworkSDK
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum BannersAnalyticsError : Swift.Error {
+  case unknown(statusCode: Swift.Int, body: Swift.String)
+  case accessDenied(statusCode: Swift.Int, body: Swift.String)
+  case internalError(statusCode: Swift.Int, body: Swift.String)
+  case badGateway(statusCode: Swift.Int, body: Swift.String)
+}
+extension CampusDigitalAnalytics.BannersAnalyticsError : Swift.Equatable {
+  public static func == (a: CampusDigitalAnalytics.BannersAnalyticsError, b: CampusDigitalAnalytics.BannersAnalyticsError) -> Swift.Bool
+}
+public typealias CampusDigitalAnalyticsAPI = CampusDigitalAnalytics.BannersAnalytics & CampusDigitalAnalytics.SendEventData
+public protocol SendEventData {
+  #if compiler(>=5.3) && $AsyncAwait
+  func send(eventName: Swift.String, with params: [Swift.String : Swift.String], universiaToken: Swift.String?) async throws
+  #endif
+}
+public protocol BannersAnalytics {
+  #if compiler(>=5.3) && $AsyncAwait
+  func sendBannersAnalytics(for bannerId: Swift.String, universiaToken: Swift.String) async throws
+  #endif
+}
+public class CampusDigitalAnalyticsAPIImpl {
+  public init(entityId: Swift.String, entityName: Swift.String? = nil, environment: CampusDigitalNetworkSDK.Environment = EnvironmentConstants.environment)
+  public init(apiKey: Swift.String, environment: CampusDigitalNetworkSDK.Environment = EnvironmentConstants.environment)
+  @objc deinit
+}
+public protocol ATTrackingManagerWrapper {
+  func requestTrackingAuthorization(completion: ((Swift.Bool) -> Swift.Void)?)
+}
+public struct ATTrackingManagerWrapperImpl {
+  public init(shouldHandleTrackingPermission: Swift.Bool = false)
+}
+extension CampusDigitalAnalytics.ATTrackingManagerWrapperImpl : CampusDigitalAnalytics.ATTrackingManagerWrapper {
+  public func requestTrackingAuthorization(completion: ((Swift.Bool) -> Swift.Void)?)
+}
+extension CampusDigitalAnalytics.CampusDigitalAnalyticsAPIImpl : CampusDigitalAnalytics.BannersAnalytics {
+  #if compiler(>=5.3) && $AsyncAwait
+  @_Concurrency.MainActor public func sendBannersAnalytics(for bannerId: Swift.String, universiaToken: Swift.String) async throws
+  #endif
+}
+extension CampusDigitalAnalytics.CampusDigitalAnalyticsAPIImpl : CampusDigitalAnalytics.SendEventData {
+  #if compiler(>=5.3) && $AsyncAwait
+  @_Concurrency.MainActor public func send(eventName: Swift.String, with params: [Swift.String : Swift.String], universiaToken: Swift.String?) async throws
+  #endif
+}
+public enum EnvironmentConstants {
+  public static var environment: CampusDigitalNetworkSDK.Environment {
+    get
+  }
+}
+public enum SendAnalyticDataError : Swift.Error {
+  case unknown(statusCode: Swift.Int, body: Swift.String)
+  case internalError(statusCode: Swift.Int, body: Swift.String)
+  case badGateway(statusCode: Swift.Int, body: Swift.String)
+  case accessDenied(statusCode: Swift.Int, body: Swift.String)
+}
+extension CampusDigitalAnalytics.SendAnalyticDataError : Swift.Equatable {
+  public static func == (a: CampusDigitalAnalytics.SendAnalyticDataError, b: CampusDigitalAnalytics.SendAnalyticDataError) -> Swift.Bool
+}

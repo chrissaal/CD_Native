@@ -1,0 +1,11 @@
+framework module CampusDigitalAnalytics {
+  umbrella header "CampusDigitalAnalytics.h"
+  export *
+
+  module * { export * }
+}
+
+module CampusDigitalAnalytics.Swift {
+  header "CampusDigitalAnalytics-Swift.h"
+  requires objc
+}

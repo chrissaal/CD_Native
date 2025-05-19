@@ -1,0 +1,4851 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CampusDigitalAnalytics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CampusDigitalNetworkSDK",
+        "printedName": "CampusDigitalNetworkSDK",
+        "declKind": "Import",
+        "moduleName": "CampusDigitalAnalytics"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SendBannersAnalyticsResource",
+        "printedName": "SendBannersAnalyticsResource",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "Constants",
+            "printedName": "Constants",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "path",
+                "printedName": "path",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:22CampusDigitalAnalytics011SendBannersC8ResourceC9ConstantsV4pathSSvpZ",
+                "mangledName": "$s22CampusDigitalAnalytics011SendBannersC8ResourceC9ConstantsV4pathSSvpZ",
+                "moduleName": "CampusDigitalAnalytics",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:22CampusDigitalAnalytics011SendBannersC8ResourceC9ConstantsV4pathSSvgZ",
+                    "mangledName": "$s22CampusDigitalAnalytics011SendBannersC8ResourceC9ConstantsV4pathSSvgZ",
+                    "moduleName": "CampusDigitalAnalytics",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Constants",
+                    "printedName": "CampusDigitalAnalytics.SendBannersAnalyticsResource.Constants",
+                    "usr": "s:22CampusDigitalAnalytics011SendBannersC8ResourceC9ConstantsV"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:22CampusDigitalAnalytics011SendBannersC8ResourceC9ConstantsVAEycfc",
+                "mangledName": "$s22CampusDigitalAnalytics011SendBannersC8ResourceC9ConstantsVAEycfc",
+                "moduleName": "CampusDigitalAnalytics",
+                "implicit": true,
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:22CampusDigitalAnalytics011SendBannersC8ResourceC9ConstantsV",
+            "mangledName": "$s22CampusDigitalAnalytics011SendBannersC8ResourceC9ConstantsV",
+            "moduleName": "CampusDigitalAnalytics",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "method",
+            "printedName": "method",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Method",
+                "printedName": "CampusDigitalNetworkSDK.Method",
+                "usr": "s:23CampusDigitalNetworkSDK6MethodO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CampusDigitalAnalytics011SendBannersC8ResourceC6method0aB10NetworkSDK6MethodOvp",
+            "mangledName": "$s22CampusDigitalAnalytics011SendBannersC8ResourceC6method0aB10NetworkSDK6MethodOvp",
+            "moduleName": "CampusDigitalAnalytics",
+            "declAttributes": [
+              "Final"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Method",
+                    "printedName": "CampusDigitalNetworkSDK.Method",
+                    "usr": "s:23CampusDigitalNetworkSDK6MethodO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22CampusDigitalAnalytics011SendBannersC8ResourceC6method0aB10NetworkSDK6MethodOvg",
+                "mangledName": "$s22CampusDigitalAnalytics011SendBannersC8ResourceC6method0aB10NetworkSDK6MethodOvg",
+                "moduleName": "CampusDigitalAnalytics",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "path",
+            "printedName": "path",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CampusDigitalAnalytics011SendBannersC8ResourceC4pathSSvp",
+            "mangledName": "$s22CampusDigitalAnalytics011SendBannersC8ResourceC4pathSSvp",
+            "moduleName": "CampusDigitalAnalytics",
+            "declAttributes": [
+              "Final"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22CampusDigitalAnalytics011SendBannersC8ResourceC4pathSSvg",
+                "mangledName": "$s22CampusDigitalAnalytics011SendBannersC8ResourceC4pathSSvg",
+                "moduleName": "CampusDigitalAnalytics",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "headers",
+            "printedName": "headers",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.AnyHashable : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.AnyHashable : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyHashable",
+                        "printedName": "Swift.AnyHashable",
+                        "usr": "s:s11AnyHashableV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CampusDigitalAnalytics011SendBannersC8ResourceC7headersSDys11AnyHashableVypGSgvp",
+            "mangledName": "$s22CampusDigitalAnalytics011SendBannersC8ResourceC7headersSDys11AnyHashableVypGSgvp",
+            "moduleName": "CampusDigitalAnalytics",
+            "declAttributes": [
+              "Final"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.AnyHashable : Any]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.AnyHashable : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AnyHashable",
+                            "printedName": "Swift.AnyHashable",
+                            "usr": "s:s11AnyHashableV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22CampusDigitalAnalytics011SendBannersC8ResourceC7headersSDys11AnyHashableVypGSgvg",
+                "mangledName": "$s22CampusDigitalAnalytics011SendBannersC8ResourceC7headersSDys11AnyHashableVypGSgvg",
+                "moduleName": "CampusDigitalAnalytics",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bodyParameters",
+            "printedName": "bodyParameters",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Encodable?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Encodable",
+                    "printedName": "Swift.Encodable",
+                    "usr": "s:SE"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CampusDigitalAnalytics011SendBannersC8ResourceC14bodyParametersSE_pSgvp",
+            "mangledName": "$s22CampusDigitalAnalytics011SendBannersC8ResourceC14bodyParametersSE_pSgvp",
+            "moduleName": "CampusDigitalAnalytics",
+            "declAttributes": [
+              "Final"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Encodable?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Encodable",
+                        "printedName": "Swift.Encodable",
+                        "usr": "s:SE"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22CampusDigitalAnalytics011SendBannersC8ResourceC14bodyParametersSE_pSgvg",
+                "mangledName": "$s22CampusDigitalAnalytics011SendBannersC8ResourceC14bodyParametersSE_pSgvg",
+                "moduleName": "CampusDigitalAnalytics",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BannersAnalyticsBody",
+                "printedName": "CampusDigitalAnalytics.BannersAnalyticsBody",
+                "usr": "s:22CampusDigitalAnalytics07BannersC4BodyV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CampusDigitalAnalytics011SendBannersC8ResourceC4body33_BC425434FE4C207619CFA0B6F372E5FDLLAA0eC4BodyVvp",
+            "mangledName": "$s22CampusDigitalAnalytics011SendBannersC8ResourceC4body33_BC425434FE4C207619CFA0B6F372E5FDLLAA0eC4BodyVvp",
+            "moduleName": "CampusDigitalAnalytics",
+            "isInternal": true,
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 0,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "token",
+            "printedName": "token",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CampusDigitalAnalytics011SendBannersC8ResourceC5token33_BC425434FE4C207619CFA0B6F372E5FDLLSSvp",
+            "mangledName": "$s22CampusDigitalAnalytics011SendBannersC8ResourceC5token33_BC425434FE4C207619CFA0B6F372E5FDLLSSvp",
+            "moduleName": "CampusDigitalAnalytics",
+            "isInternal": true,
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 1,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "bannerId",
+            "printedName": "bannerId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CampusDigitalAnalytics011SendBannersC8ResourceC8bannerId33_BC425434FE4C207619CFA0B6F372E5FDLLSSvp",
+            "mangledName": "$s22CampusDigitalAnalytics011SendBannersC8ResourceC8bannerId33_BC425434FE4C207619CFA0B6F372E5FDLLSSvp",
+            "moduleName": "CampusDigitalAnalytics",
+            "isInternal": true,
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 2,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(body:token:bannerId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SendBannersAnalyticsResource",
+                "printedName": "CampusDigitalAnalytics.SendBannersAnalyticsResource",
+                "usr": "s:22CampusDigitalAnalytics011SendBannersC8ResourceC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BannersAnalyticsBody",
+                "printedName": "CampusDigitalAnalytics.BannersAnalyticsBody",
+                "usr": "s:22CampusDigitalAnalytics07BannersC4BodyV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22CampusDigitalAnalytics011SendBannersC8ResourceC4body5token8bannerIdAcA0eC4BodyV_S2Stcfc",
+            "mangledName": "$s22CampusDigitalAnalytics011SendBannersC8ResourceC4body5token8bannerIdAcA0eC4BodyV_S2Stcfc",
+            "moduleName": "CampusDigitalAnalytics",
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:22CampusDigitalAnalytics011SendBannersC8ResourceC",
+        "mangledName": "$s22CampusDigitalAnalytics011SendBannersC8ResourceC",
+        "moduleName": "CampusDigitalAnalytics",
+        "declAttributes": [
+          "Final"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ApiResource",
+            "printedName": "ApiResource",
+            "usr": "s:23CampusDigitalNetworkSDK11ApiResourceP",
+            "mangledName": "$s23CampusDigitalNetworkSDK11ApiResourceP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CampusDigitalAnalytics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BannersAnalyticsError",
+        "printedName": "BannersAnalyticsError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CampusDigitalAnalytics.BannersAnalyticsError.Type) -> (Swift.Int, Swift.String) -> CampusDigitalAnalytics.BannersAnalyticsError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int, Swift.String) -> CampusDigitalAnalytics.BannersAnalyticsError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BannersAnalyticsError",
+                        "printedName": "CampusDigitalAnalytics.BannersAnalyticsError",
+                        "usr": "s:22CampusDigitalAnalytics07BannersC5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(statusCode: Swift.Int, body: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CampusDigitalAnalytics.BannersAnalyticsError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BannersAnalyticsError",
+                        "printedName": "CampusDigitalAnalytics.BannersAnalyticsError",
+                        "usr": "s:22CampusDigitalAnalytics07BannersC5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:22CampusDigitalAnalytics07BannersC5ErrorO7unknownyACSi_SStcACmF",
+            "mangledName": "$s22CampusDigitalAnalytics07BannersC5ErrorO7unknownyACSi_SStcACmF",
+            "moduleName": "CampusDigitalAnalytics"
+          },
+          {
+            "kind": "Var",
+            "name": "accessDenied",
+            "printedName": "accessDenied",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CampusDigitalAnalytics.BannersAnalyticsError.Type) -> (Swift.Int, Swift.String) -> CampusDigitalAnalytics.BannersAnalyticsError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int, Swift.String) -> CampusDigitalAnalytics.BannersAnalyticsError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BannersAnalyticsError",
+                        "printedName": "CampusDigitalAnalytics.BannersAnalyticsError",
+                        "usr": "s:22CampusDigitalAnalytics07BannersC5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(statusCode: Swift.Int, body: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CampusDigitalAnalytics.BannersAnalyticsError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BannersAnalyticsError",
+                        "printedName": "CampusDigitalAnalytics.BannersAnalyticsError",
+                        "usr": "s:22CampusDigitalAnalytics07BannersC5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:22CampusDigitalAnalytics07BannersC5ErrorO12accessDeniedyACSi_SStcACmF",
+            "mangledName": "$s22CampusDigitalAnalytics07BannersC5ErrorO12accessDeniedyACSi_SStcACmF",
+            "moduleName": "CampusDigitalAnalytics"
+          },
+          {
+            "kind": "Var",
+            "name": "internalError",
+            "printedName": "internalError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CampusDigitalAnalytics.BannersAnalyticsError.Type) -> (Swift.Int, Swift.String) -> CampusDigitalAnalytics.BannersAnalyticsError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int, Swift.String) -> CampusDigitalAnalytics.BannersAnalyticsError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BannersAnalyticsError",
+                        "printedName": "CampusDigitalAnalytics.BannersAnalyticsError",
+                        "usr": "s:22CampusDigitalAnalytics07BannersC5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(statusCode: Swift.Int, body: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CampusDigitalAnalytics.BannersAnalyticsError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BannersAnalyticsError",
+                        "printedName": "CampusDigitalAnalytics.BannersAnalyticsError",
+                        "usr": "s:22CampusDigitalAnalytics07BannersC5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:22CampusDigitalAnalytics07BannersC5ErrorO08internalE0yACSi_SStcACmF",
+            "mangledName": "$s22CampusDigitalAnalytics07BannersC5ErrorO08internalE0yACSi_SStcACmF",
+            "moduleName": "CampusDigitalAnalytics"
+          },
+          {
+            "kind": "Var",
+            "name": "badGateway",
+            "printedName": "badGateway",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CampusDigitalAnalytics.BannersAnalyticsError.Type) -> (Swift.Int, Swift.String) -> CampusDigitalAnalytics.BannersAnalyticsError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int, Swift.String) -> CampusDigitalAnalytics.BannersAnalyticsError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BannersAnalyticsError",
+                        "printedName": "CampusDigitalAnalytics.BannersAnalyticsError",
+                        "usr": "s:22CampusDigitalAnalytics07BannersC5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(statusCode: Swift.Int, body: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CampusDigitalAnalytics.BannersAnalyticsError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BannersAnalyticsError",
+                        "printedName": "CampusDigitalAnalytics.BannersAnalyticsError",
+                        "usr": "s:22CampusDigitalAnalytics07BannersC5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:22CampusDigitalAnalytics07BannersC5ErrorO10badGatewayyACSi_SStcACmF",
+            "mangledName": "$s22CampusDigitalAnalytics07BannersC5ErrorO10badGatewayyACSi_SStcACmF",
+            "moduleName": "CampusDigitalAnalytics"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BannersAnalyticsError",
+                "printedName": "CampusDigitalAnalytics.BannersAnalyticsError",
+                "usr": "s:22CampusDigitalAnalytics07BannersC5ErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BannersAnalyticsError",
+                "printedName": "CampusDigitalAnalytics.BannersAnalyticsError",
+                "usr": "s:22CampusDigitalAnalytics07BannersC5ErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CampusDigitalAnalytics07BannersC5ErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s22CampusDigitalAnalytics07BannersC5ErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "CampusDigitalAnalytics",
+            "static": true,
+            "implicit": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:22CampusDigitalAnalytics07BannersC5ErrorO",
+        "mangledName": "$s22CampusDigitalAnalytics07BannersC5ErrorO",
+        "moduleName": "CampusDigitalAnalytics",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CampusDigitalAnalytics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AnalyticsEventBody",
+        "printedName": "AnalyticsEventBody",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "entityId",
+            "printedName": "entityId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CampusDigitalAnalytics0C9EventBodyV8entityId33_21D0B88CBF8177FC192B9ED2C6218CA1LLSSSgvp",
+            "mangledName": "$s22CampusDigitalAnalytics0C9EventBodyV8entityId33_21D0B88CBF8177FC192B9ED2C6218CA1LLSSSgvp",
+            "moduleName": "CampusDigitalAnalytics",
+            "isInternal": true,
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 0,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "entityName",
+            "printedName": "entityName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CampusDigitalAnalytics0C9EventBodyV10entityName33_21D0B88CBF8177FC192B9ED2C6218CA1LLSSSgvp",
+            "mangledName": "$s22CampusDigitalAnalytics0C9EventBodyV10entityName33_21D0B88CBF8177FC192B9ED2C6218CA1LLSSSgvp",
+            "moduleName": "CampusDigitalAnalytics",
+            "isInternal": true,
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 1,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "eventName",
+            "printedName": "eventName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CampusDigitalAnalytics0C9EventBodyV9eventName33_21D0B88CBF8177FC192B9ED2C6218CA1LLSSvp",
+            "mangledName": "$s22CampusDigitalAnalytics0C9EventBodyV9eventName33_21D0B88CBF8177FC192B9ED2C6218CA1LLSSvp",
+            "moduleName": "CampusDigitalAnalytics",
+            "isInternal": true,
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 2,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "platform",
+            "printedName": "platform",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CampusDigitalAnalytics0C9EventBodyV8platform33_21D0B88CBF8177FC192B9ED2C6218CA1LLSSvp",
+            "mangledName": "$s22CampusDigitalAnalytics0C9EventBodyV8platform33_21D0B88CBF8177FC192B9ED2C6218CA1LLSSvp",
+            "moduleName": "CampusDigitalAnalytics",
+            "isInternal": true,
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 3,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "params",
+            "printedName": "params",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CampusDigitalAnalytics0C9EventBodyV6params33_21D0B88CBF8177FC192B9ED2C6218CA1LLSDyS2SGvp",
+            "mangledName": "$s22CampusDigitalAnalytics0C9EventBodyV6params33_21D0B88CBF8177FC192B9ED2C6218CA1LLSDyS2SGvp",
+            "moduleName": "CampusDigitalAnalytics",
+            "isInternal": true,
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 4,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(entityId:entityName:eventName:platform:params:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnalyticsEventBody",
+                "printedName": "CampusDigitalAnalytics.AnalyticsEventBody",
+                "usr": "s:22CampusDigitalAnalytics0C9EventBodyV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22CampusDigitalAnalytics0C9EventBodyV8entityId0F4Name05eventH08platform6paramsACSSSg_AIS2SSDyS2SGtcfc",
+            "mangledName": "$s22CampusDigitalAnalytics0C9EventBodyV8entityId0F4Name05eventH08platform6paramsACSSSg_AIS2SSDyS2SGtcfc",
+            "moduleName": "CampusDigitalAnalytics",
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnalyticsEventBody",
+                "printedName": "CampusDigitalAnalytics.AnalyticsEventBody",
+                "usr": "s:22CampusDigitalAnalytics0C9EventBodyV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22CampusDigitalAnalytics0C9EventBodyV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s22CampusDigitalAnalytics0C9EventBodyV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "CampusDigitalAnalytics",
+            "implicit": true,
+            "isFromExtension": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CampusDigitalAnalytics0C9EventBodyV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s22CampusDigitalAnalytics0C9EventBodyV6encode2toys7Encoder_p_tKF",
+            "moduleName": "CampusDigitalAnalytics",
+            "implicit": true,
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:22CampusDigitalAnalytics0C9EventBodyV",
+        "mangledName": "$s22CampusDigitalAnalytics0C9EventBodyV",
+        "moduleName": "CampusDigitalAnalytics",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CampusDigitalAnalytics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BannersAnalyticsBody",
+        "printedName": "BannersAnalyticsBody",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "Constants",
+            "printedName": "Constants",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "ios",
+                "printedName": "ios",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:22CampusDigitalAnalytics07BannersC4BodyV9ConstantsV3iosSSvpZ",
+                "mangledName": "$s22CampusDigitalAnalytics07BannersC4BodyV9ConstantsV3iosSSvpZ",
+                "moduleName": "CampusDigitalAnalytics",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:22CampusDigitalAnalytics07BannersC4BodyV9ConstantsV3iosSSvgZ",
+                    "mangledName": "$s22CampusDigitalAnalytics07BannersC4BodyV9ConstantsV3iosSSvgZ",
+                    "moduleName": "CampusDigitalAnalytics",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Constants",
+                    "printedName": "CampusDigitalAnalytics.BannersAnalyticsBody.Constants",
+                    "usr": "s:22CampusDigitalAnalytics07BannersC4BodyV9ConstantsV"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:22CampusDigitalAnalytics07BannersC4BodyV9ConstantsVAEycfc",
+                "mangledName": "$s22CampusDigitalAnalytics07BannersC4BodyV9ConstantsVAEycfc",
+                "moduleName": "CampusDigitalAnalytics",
+                "implicit": true,
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:22CampusDigitalAnalytics07BannersC4BodyV9ConstantsV",
+            "mangledName": "$s22CampusDigitalAnalytics07BannersC4BodyV9ConstantsV",
+            "moduleName": "CampusDigitalAnalytics",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "platform",
+            "printedName": "platform",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CampusDigitalAnalytics07BannersC4BodyV8platform33_9B2A343440D11B2457A26264D2E50BC0LLSSvp",
+            "mangledName": "$s22CampusDigitalAnalytics07BannersC4BodyV8platform33_9B2A343440D11B2457A26264D2E50BC0LLSSvp",
+            "moduleName": "CampusDigitalAnalytics",
+            "isInternal": true,
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 0,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(platform:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BannersAnalyticsBody",
+                "printedName": "CampusDigitalAnalytics.BannersAnalyticsBody",
+                "usr": "s:22CampusDigitalAnalytics07BannersC4BodyV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22CampusDigitalAnalytics07BannersC4BodyV8platformACSS_tcfc",
+            "mangledName": "$s22CampusDigitalAnalytics07BannersC4BodyV8platformACSS_tcfc",
+            "moduleName": "CampusDigitalAnalytics",
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BannersAnalyticsBody",
+                "printedName": "CampusDigitalAnalytics.BannersAnalyticsBody",
+                "usr": "s:22CampusDigitalAnalytics07BannersC4BodyV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22CampusDigitalAnalytics07BannersC4BodyV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s22CampusDigitalAnalytics07BannersC4BodyV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "CampusDigitalAnalytics",
+            "implicit": true,
+            "isFromExtension": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CampusDigitalAnalytics07BannersC4BodyV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s22CampusDigitalAnalytics07BannersC4BodyV6encode2toys7Encoder_p_tKF",
+            "moduleName": "CampusDigitalAnalytics",
+            "implicit": true,
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:22CampusDigitalAnalytics07BannersC4BodyV",
+        "mangledName": "$s22CampusDigitalAnalytics07BannersC4BodyV",
+        "moduleName": "CampusDigitalAnalytics",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CampusDigitalAnalytics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CampusDigitalNetworkSDK",
+        "printedName": "CampusDigitalNetworkSDK",
+        "declKind": "Import",
+        "moduleName": "CampusDigitalAnalytics"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SendEventData",
+        "printedName": "SendEventData",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "send",
+            "printedName": "send(eventName:with:universiaToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CampusDigitalAnalytics13SendEventDataP4send9eventName4with14universiaTokenySS_SDyS2SGSSSgtYaKF",
+            "mangledName": "$s22CampusDigitalAnalytics13SendEventDataP4send9eventName4with14universiaTokenySS_SDyS2SGSSSgtYaKF",
+            "moduleName": "CampusDigitalAnalytics",
+            "genericSig": "<τ_0_0 where τ_0_0 : CampusDigitalAnalytics.SendEventData>",
+            "sugared_genericSig": "<Self where Self : CampusDigitalAnalytics.SendEventData>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:22CampusDigitalAnalytics13SendEventDataP",
+        "mangledName": "$s22CampusDigitalAnalytics13SendEventDataP",
+        "moduleName": "CampusDigitalAnalytics",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BannersAnalytics",
+        "printedName": "BannersAnalytics",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "sendBannersAnalytics",
+            "printedName": "sendBannersAnalytics(for:universiaToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CampusDigitalAnalytics07BannersC0P04senddC03for14universiaTokenySS_SStYaKF",
+            "mangledName": "$s22CampusDigitalAnalytics07BannersC0P04senddC03for14universiaTokenySS_SStYaKF",
+            "moduleName": "CampusDigitalAnalytics",
+            "genericSig": "<τ_0_0 where τ_0_0 : CampusDigitalAnalytics.BannersAnalytics>",
+            "sugared_genericSig": "<Self where Self : CampusDigitalAnalytics.BannersAnalytics>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:22CampusDigitalAnalytics07BannersC0P",
+        "mangledName": "$s22CampusDigitalAnalytics07BannersC0P",
+        "moduleName": "CampusDigitalAnalytics",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CampusDigitalAnalyticsAPIImpl",
+        "printedName": "CampusDigitalAnalyticsAPIImpl",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "apiKey",
+            "printedName": "apiKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CampusDigitalAnalytics0abC7APIImplC6apiKeySSSgvp",
+            "mangledName": "$s22CampusDigitalAnalytics0abC7APIImplC6apiKeySSSgvp",
+            "moduleName": "CampusDigitalAnalytics",
+            "declAttributes": [
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22CampusDigitalAnalytics0abC7APIImplC6apiKeySSSgvg",
+                "mangledName": "$s22CampusDigitalAnalytics0abC7APIImplC6apiKeySSSgvg",
+                "moduleName": "CampusDigitalAnalytics",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "entityId",
+            "printedName": "entityId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CampusDigitalAnalytics0abC7APIImplC8entityIdSSSgvp",
+            "mangledName": "$s22CampusDigitalAnalytics0abC7APIImplC8entityIdSSSgvp",
+            "moduleName": "CampusDigitalAnalytics",
+            "declAttributes": [
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22CampusDigitalAnalytics0abC7APIImplC8entityIdSSSgvg",
+                "mangledName": "$s22CampusDigitalAnalytics0abC7APIImplC8entityIdSSSgvg",
+                "moduleName": "CampusDigitalAnalytics",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "entityName",
+            "printedName": "entityName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CampusDigitalAnalytics0abC7APIImplC10entityNameSSSgvp",
+            "mangledName": "$s22CampusDigitalAnalytics0abC7APIImplC10entityNameSSSgvp",
+            "moduleName": "CampusDigitalAnalytics",
+            "declAttributes": [
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22CampusDigitalAnalytics0abC7APIImplC10entityNameSSSgvg",
+                "mangledName": "$s22CampusDigitalAnalytics0abC7APIImplC10entityNameSSSgvg",
+                "moduleName": "CampusDigitalAnalytics",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "environment",
+            "printedName": "environment",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Environment",
+                "printedName": "CampusDigitalNetworkSDK.Environment",
+                "usr": "s:23CampusDigitalNetworkSDK11EnvironmentO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CampusDigitalAnalytics0abC7APIImplC11environment0aB10NetworkSDK11EnvironmentOvp",
+            "mangledName": "$s22CampusDigitalAnalytics0abC7APIImplC11environment0aB10NetworkSDK11EnvironmentOvp",
+            "moduleName": "CampusDigitalAnalytics",
+            "declAttributes": [
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "CampusDigitalNetworkSDK.Environment",
+                    "usr": "s:23CampusDigitalNetworkSDK11EnvironmentO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22CampusDigitalAnalytics0abC7APIImplC11environment0aB10NetworkSDK11EnvironmentOvg",
+                "mangledName": "$s22CampusDigitalAnalytics0abC7APIImplC11environment0aB10NetworkSDK11EnvironmentOvg",
+                "moduleName": "CampusDigitalAnalytics",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(entityId:entityName:environment:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CampusDigitalAnalyticsAPIImpl",
+                "printedName": "CampusDigitalAnalytics.CampusDigitalAnalyticsAPIImpl",
+                "usr": "s:22CampusDigitalAnalytics0abC7APIImplC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Environment",
+                "printedName": "CampusDigitalNetworkSDK.Environment",
+                "hasDefaultArg": true,
+                "usr": "s:23CampusDigitalNetworkSDK11EnvironmentO"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22CampusDigitalAnalytics0abC7APIImplC8entityId0E4Name11environmentACSS_SSSg0aB10NetworkSDK11EnvironmentOtcfc",
+            "mangledName": "$s22CampusDigitalAnalytics0abC7APIImplC8entityId0E4Name11environmentACSS_SSSg0aB10NetworkSDK11EnvironmentOtcfc",
+            "moduleName": "CampusDigitalAnalytics",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(apiKey:environment:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CampusDigitalAnalyticsAPIImpl",
+                "printedName": "CampusDigitalAnalytics.CampusDigitalAnalyticsAPIImpl",
+                "usr": "s:22CampusDigitalAnalytics0abC7APIImplC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Environment",
+                "printedName": "CampusDigitalNetworkSDK.Environment",
+                "hasDefaultArg": true,
+                "usr": "s:23CampusDigitalNetworkSDK11EnvironmentO"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22CampusDigitalAnalytics0abC7APIImplC6apiKey11environmentACSS_0aB10NetworkSDK11EnvironmentOtcfc",
+            "mangledName": "$s22CampusDigitalAnalytics0abC7APIImplC6apiKey11environmentACSS_0aB10NetworkSDK11EnvironmentOtcfc",
+            "moduleName": "CampusDigitalAnalytics",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "getNetworkClient",
+            "printedName": "getNetworkClient()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkClient",
+                "printedName": "CampusDigitalNetworkSDK.NetworkClient",
+                "usr": "s:23CampusDigitalNetworkSDK0C6ClientP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CampusDigitalAnalytics0abC7APIImplC16getNetworkClient0abF3SDK0fG0_pyF",
+            "mangledName": "$s22CampusDigitalAnalytics0abC7APIImplC16getNetworkClient0abF3SDK0fG0_pyF",
+            "moduleName": "CampusDigitalAnalytics",
+            "isOpen": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendBannersAnalytics",
+            "printedName": "sendBannersAnalytics(for:universiaToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CampusDigitalAnalytics0abC7APIImplC011sendBannersC03for14universiaTokenySS_SStYaKF",
+            "mangledName": "$s22CampusDigitalAnalytics0abC7APIImplC011sendBannersC03for14universiaTokenySS_SStYaKF",
+            "moduleName": "CampusDigitalAnalytics",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getSendBannersAnalyticsUseCase",
+            "printedName": "getSendBannersAnalyticsUseCase(for:universiaToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SendBannersAnalyticsUseCase",
+                "printedName": "CampusDigitalAnalytics.SendBannersAnalyticsUseCase",
+                "usr": "s:22CampusDigitalAnalytics011SendBannersC7UseCaseP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CampusDigitalAnalytics0abC7APIImplC014getSendBannersC7UseCase3for14universiaTokenAA0fgchI0_pSS_SStF",
+            "mangledName": "$s22CampusDigitalAnalytics0abC7APIImplC014getSendBannersC7UseCase3for14universiaTokenAA0fgchI0_pSS_SStF",
+            "moduleName": "CampusDigitalAnalytics",
+            "isOpen": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Constants",
+            "printedName": "Constants",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "ios",
+                "printedName": "ios",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:22CampusDigitalAnalytics0abC7APIImplC9ConstantsV3iosSSvpZ",
+                "mangledName": "$s22CampusDigitalAnalytics0abC7APIImplC9ConstantsV3iosSSvpZ",
+                "moduleName": "CampusDigitalAnalytics",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:22CampusDigitalAnalytics0abC7APIImplC9ConstantsV3iosSSvgZ",
+                    "mangledName": "$s22CampusDigitalAnalytics0abC7APIImplC9ConstantsV3iosSSvgZ",
+                    "moduleName": "CampusDigitalAnalytics",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Constants",
+                    "printedName": "CampusDigitalAnalytics.CampusDigitalAnalyticsAPIImpl.Constants",
+                    "usr": "s:22CampusDigitalAnalytics0abC7APIImplC9ConstantsV"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:22CampusDigitalAnalytics0abC7APIImplC9ConstantsVAEycfc",
+                "mangledName": "$s22CampusDigitalAnalytics0abC7APIImplC9ConstantsVAEycfc",
+                "moduleName": "CampusDigitalAnalytics",
+                "implicit": true,
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:22CampusDigitalAnalytics0abC7APIImplC9ConstantsV",
+            "mangledName": "$s22CampusDigitalAnalytics0abC7APIImplC9ConstantsV",
+            "moduleName": "CampusDigitalAnalytics",
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "send",
+            "printedName": "send(eventName:with:universiaToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CampusDigitalAnalytics0abC7APIImplC4send9eventName4with14universiaTokenySS_SDyS2SGSSSgtYaKF",
+            "mangledName": "$s22CampusDigitalAnalytics0abC7APIImplC4send9eventName4with14universiaTokenySS_SDyS2SGSSSgtYaKF",
+            "moduleName": "CampusDigitalAnalytics",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendAnalyticDataUseCase",
+            "printedName": "sendAnalyticDataUseCase(eventName:with:universiaToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SendAnalyticDataUseCase",
+                "printedName": "CampusDigitalAnalytics.SendAnalyticDataUseCase",
+                "usr": "s:22CampusDigitalAnalytics23SendAnalyticDataUseCaseP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CampusDigitalAnalytics0abC7APIImplC23sendAnalyticDataUseCase9eventName4with14universiaTokenAA04SendfghI0_pSS_SDyS2SGSSSgtF",
+            "mangledName": "$s22CampusDigitalAnalytics0abC7APIImplC23sendAnalyticDataUseCase9eventName4with14universiaTokenAA04SendfghI0_pSS_SDyS2SGSSSgtF",
+            "moduleName": "CampusDigitalAnalytics",
+            "isOpen": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:22CampusDigitalAnalytics0abC7APIImplC",
+        "mangledName": "$s22CampusDigitalAnalytics0abC7APIImplC",
+        "moduleName": "CampusDigitalAnalytics",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "BannersAnalytics",
+            "printedName": "BannersAnalytics",
+            "usr": "s:22CampusDigitalAnalytics07BannersC0P",
+            "mangledName": "$s22CampusDigitalAnalytics07BannersC0P"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendEventData",
+            "printedName": "SendEventData",
+            "usr": "s:22CampusDigitalAnalytics13SendEventDataP",
+            "mangledName": "$s22CampusDigitalAnalytics13SendEventDataP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CampusDigitalAnalytics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CampusDigitalNetworkSDK",
+        "printedName": "CampusDigitalNetworkSDK",
+        "declKind": "Import",
+        "moduleName": "CampusDigitalAnalytics"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CampusDigitalAnalytics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CampusDigitalNetworkSDK",
+        "printedName": "CampusDigitalNetworkSDK",
+        "declKind": "Import",
+        "moduleName": "CampusDigitalAnalytics"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SendAnalyticDataUseCase",
+        "printedName": "SendAnalyticDataUseCase",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "sendAnalyticData",
+            "printedName": "sendAnalyticData()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CampusDigitalAnalytics23SendAnalyticDataUseCaseP04sendeF0yyYaKF",
+            "mangledName": "$s22CampusDigitalAnalytics23SendAnalyticDataUseCaseP04sendeF0yyYaKF",
+            "moduleName": "CampusDigitalAnalytics",
+            "genericSig": "<τ_0_0 where τ_0_0 : CampusDigitalAnalytics.SendAnalyticDataUseCase>",
+            "sugared_genericSig": "<Self where Self : CampusDigitalAnalytics.SendAnalyticDataUseCase>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:22CampusDigitalAnalytics23SendAnalyticDataUseCaseP",
+        "mangledName": "$s22CampusDigitalAnalytics23SendAnalyticDataUseCaseP",
+        "moduleName": "CampusDigitalAnalytics"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SendAnalyticDataUseCaseImpl",
+        "printedName": "SendAnalyticDataUseCaseImpl",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "Constants",
+            "printedName": "Constants",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "defaultErrorCode",
+                "printedName": "defaultErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:22CampusDigitalAnalytics27SendAnalyticDataUseCaseImplV9ConstantsV16defaultErrorCodeSivpZ",
+                "mangledName": "$s22CampusDigitalAnalytics27SendAnalyticDataUseCaseImplV9ConstantsV16defaultErrorCodeSivpZ",
+                "moduleName": "CampusDigitalAnalytics",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:22CampusDigitalAnalytics27SendAnalyticDataUseCaseImplV9ConstantsV16defaultErrorCodeSivgZ",
+                    "mangledName": "$s22CampusDigitalAnalytics27SendAnalyticDataUseCaseImplV9ConstantsV16defaultErrorCodeSivgZ",
+                    "moduleName": "CampusDigitalAnalytics",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "unhandledError",
+                "printedName": "unhandledError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:22CampusDigitalAnalytics27SendAnalyticDataUseCaseImplV9ConstantsV14unhandledErrorSSvpZ",
+                "mangledName": "$s22CampusDigitalAnalytics27SendAnalyticDataUseCaseImplV9ConstantsV14unhandledErrorSSvpZ",
+                "moduleName": "CampusDigitalAnalytics",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:22CampusDigitalAnalytics27SendAnalyticDataUseCaseImplV9ConstantsV14unhandledErrorSSvgZ",
+                    "mangledName": "$s22CampusDigitalAnalytics27SendAnalyticDataUseCaseImplV9ConstantsV14unhandledErrorSSvgZ",
+                    "moduleName": "CampusDigitalAnalytics",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Constants",
+                    "printedName": "CampusDigitalAnalytics.SendAnalyticDataUseCaseImpl.Constants",
+                    "usr": "s:22CampusDigitalAnalytics27SendAnalyticDataUseCaseImplV9ConstantsV"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:22CampusDigitalAnalytics27SendAnalyticDataUseCaseImplV9ConstantsVAEycfc",
+                "mangledName": "$s22CampusDigitalAnalytics27SendAnalyticDataUseCaseImplV9ConstantsVAEycfc",
+                "moduleName": "CampusDigitalAnalytics",
+                "implicit": true,
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:22CampusDigitalAnalytics27SendAnalyticDataUseCaseImplV9ConstantsV",
+            "mangledName": "$s22CampusDigitalAnalytics27SendAnalyticDataUseCaseImplV9ConstantsV",
+            "moduleName": "CampusDigitalAnalytics",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "networkClient",
+            "printedName": "networkClient",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkClient",
+                "printedName": "CampusDigitalNetworkSDK.NetworkClient",
+                "usr": "s:23CampusDigitalNetworkSDK0C6ClientP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CampusDigitalAnalytics27SendAnalyticDataUseCaseImplV13networkClient33_DA5061597C3AC85D29A70CA05442DA45LL0aB10NetworkSDK0sK0_pvp",
+            "mangledName": "$s22CampusDigitalAnalytics27SendAnalyticDataUseCaseImplV13networkClient33_DA5061597C3AC85D29A70CA05442DA45LL0aB10NetworkSDK0sK0_pvp",
+            "moduleName": "CampusDigitalAnalytics",
+            "isInternal": true,
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 0,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "sendAnalyticDataResource",
+            "printedName": "sendAnalyticDataResource",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SendAnalyticDataResource",
+                "printedName": "CampusDigitalAnalytics.SendAnalyticDataResource",
+                "usr": "s:22CampusDigitalAnalytics24SendAnalyticDataResourceC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CampusDigitalAnalytics27SendAnalyticDataUseCaseImplV04sendeF8Resource33_DA5061597C3AC85D29A70CA05442DA45LLAA0defK0Cvp",
+            "mangledName": "$s22CampusDigitalAnalytics27SendAnalyticDataUseCaseImplV04sendeF8Resource33_DA5061597C3AC85D29A70CA05442DA45LLAA0defK0Cvp",
+            "moduleName": "CampusDigitalAnalytics",
+            "isInternal": true,
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 1,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(networkClient:sendAnalyticDataResource:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SendAnalyticDataUseCaseImpl",
+                "printedName": "CampusDigitalAnalytics.SendAnalyticDataUseCaseImpl",
+                "usr": "s:22CampusDigitalAnalytics27SendAnalyticDataUseCaseImplV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkClient",
+                "printedName": "CampusDigitalNetworkSDK.NetworkClient",
+                "usr": "s:23CampusDigitalNetworkSDK0C6ClientP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SendAnalyticDataResource",
+                "printedName": "CampusDigitalAnalytics.SendAnalyticDataResource",
+                "usr": "s:22CampusDigitalAnalytics24SendAnalyticDataResourceC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22CampusDigitalAnalytics27SendAnalyticDataUseCaseImplV13networkClient04sendeF8ResourceAC0aB10NetworkSDK0nK0_p_AA0defM0Ctcfc",
+            "mangledName": "$s22CampusDigitalAnalytics27SendAnalyticDataUseCaseImplV13networkClient04sendeF8ResourceAC0aB10NetworkSDK0nK0_p_AA0defM0Ctcfc",
+            "moduleName": "CampusDigitalAnalytics",
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "sendAnalyticData",
+            "printedName": "sendAnalyticData()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CampusDigitalAnalytics27SendAnalyticDataUseCaseImplV04sendeF0yyYaKF",
+            "mangledName": "$s22CampusDigitalAnalytics27SendAnalyticDataUseCaseImplV04sendeF0yyYaKF",
+            "moduleName": "CampusDigitalAnalytics",
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:22CampusDigitalAnalytics27SendAnalyticDataUseCaseImplV",
+        "mangledName": "$s22CampusDigitalAnalytics27SendAnalyticDataUseCaseImplV",
+        "moduleName": "CampusDigitalAnalytics",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "SendAnalyticDataUseCase",
+            "printedName": "SendAnalyticDataUseCase",
+            "usr": "s:22CampusDigitalAnalytics23SendAnalyticDataUseCaseP",
+            "mangledName": "$s22CampusDigitalAnalytics23SendAnalyticDataUseCaseP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CampusDigitalAnalytics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AppTrackingTransparency",
+        "printedName": "AppTrackingTransparency",
+        "declKind": "Import",
+        "moduleName": "CampusDigitalAnalytics"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ATTrackingManagerWrapper",
+        "printedName": "ATTrackingManagerWrapper",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "requestTrackingAuthorization",
+            "printedName": "requestTrackingAuthorization(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CampusDigitalAnalytics24ATTrackingManagerWrapperP28requestTrackingAuthorization10completionyySbcSg_tF",
+            "mangledName": "$s22CampusDigitalAnalytics24ATTrackingManagerWrapperP28requestTrackingAuthorization10completionyySbcSg_tF",
+            "moduleName": "CampusDigitalAnalytics",
+            "genericSig": "<τ_0_0 where τ_0_0 : CampusDigitalAnalytics.ATTrackingManagerWrapper>",
+            "sugared_genericSig": "<Self where Self : CampusDigitalAnalytics.ATTrackingManagerWrapper>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:22CampusDigitalAnalytics24ATTrackingManagerWrapperP",
+        "mangledName": "$s22CampusDigitalAnalytics24ATTrackingManagerWrapperP",
+        "moduleName": "CampusDigitalAnalytics",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ATTrackingManagerWrapperImpl",
+        "printedName": "ATTrackingManagerWrapperImpl",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(shouldHandleTrackingPermission:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ATTrackingManagerWrapperImpl",
+                "printedName": "CampusDigitalAnalytics.ATTrackingManagerWrapperImpl",
+                "usr": "s:22CampusDigitalAnalytics28ATTrackingManagerWrapperImplV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22CampusDigitalAnalytics28ATTrackingManagerWrapperImplV30shouldHandleTrackingPermissionACSb_tcfc",
+            "mangledName": "$s22CampusDigitalAnalytics28ATTrackingManagerWrapperImplV30shouldHandleTrackingPermissionACSb_tcfc",
+            "moduleName": "CampusDigitalAnalytics",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "requestTrackingAuthorization",
+            "printedName": "requestTrackingAuthorization(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CampusDigitalAnalytics28ATTrackingManagerWrapperImplV28requestTrackingAuthorization10completionyySbcSg_tF",
+            "mangledName": "$s22CampusDigitalAnalytics28ATTrackingManagerWrapperImplV28requestTrackingAuthorization10completionyySbcSg_tF",
+            "moduleName": "CampusDigitalAnalytics",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:22CampusDigitalAnalytics28ATTrackingManagerWrapperImplV",
+        "mangledName": "$s22CampusDigitalAnalytics28ATTrackingManagerWrapperImplV",
+        "moduleName": "CampusDigitalAnalytics",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ATTrackingManagerWrapper",
+            "printedName": "ATTrackingManagerWrapper",
+            "usr": "s:22CampusDigitalAnalytics24ATTrackingManagerWrapperP",
+            "mangledName": "$s22CampusDigitalAnalytics24ATTrackingManagerWrapperP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CampusDigitalAnalytics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CampusDigitalNetworkSDK",
+        "printedName": "CampusDigitalNetworkSDK",
+        "declKind": "Import",
+        "moduleName": "CampusDigitalAnalytics"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SendAnalyticDataResource",
+        "printedName": "SendAnalyticDataResource",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "Constants",
+            "printedName": "Constants",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "path",
+                "printedName": "path",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:22CampusDigitalAnalytics24SendAnalyticDataResourceC9ConstantsV4pathSSvpZ",
+                "mangledName": "$s22CampusDigitalAnalytics24SendAnalyticDataResourceC9ConstantsV4pathSSvpZ",
+                "moduleName": "CampusDigitalAnalytics",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:22CampusDigitalAnalytics24SendAnalyticDataResourceC9ConstantsV4pathSSvgZ",
+                    "mangledName": "$s22CampusDigitalAnalytics24SendAnalyticDataResourceC9ConstantsV4pathSSvgZ",
+                    "moduleName": "CampusDigitalAnalytics",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Constants",
+                    "printedName": "CampusDigitalAnalytics.SendAnalyticDataResource.Constants",
+                    "usr": "s:22CampusDigitalAnalytics24SendAnalyticDataResourceC9ConstantsV"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:22CampusDigitalAnalytics24SendAnalyticDataResourceC9ConstantsVAEycfc",
+                "mangledName": "$s22CampusDigitalAnalytics24SendAnalyticDataResourceC9ConstantsVAEycfc",
+                "moduleName": "CampusDigitalAnalytics",
+                "implicit": true,
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:22CampusDigitalAnalytics24SendAnalyticDataResourceC9ConstantsV",
+            "mangledName": "$s22CampusDigitalAnalytics24SendAnalyticDataResourceC9ConstantsV",
+            "moduleName": "CampusDigitalAnalytics",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "method",
+            "printedName": "method",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Method",
+                "printedName": "CampusDigitalNetworkSDK.Method",
+                "usr": "s:23CampusDigitalNetworkSDK6MethodO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CampusDigitalAnalytics24SendAnalyticDataResourceC6method0aB10NetworkSDK6MethodOvp",
+            "mangledName": "$s22CampusDigitalAnalytics24SendAnalyticDataResourceC6method0aB10NetworkSDK6MethodOvp",
+            "moduleName": "CampusDigitalAnalytics",
+            "declAttributes": [
+              "Final"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Method",
+                    "printedName": "CampusDigitalNetworkSDK.Method",
+                    "usr": "s:23CampusDigitalNetworkSDK6MethodO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22CampusDigitalAnalytics24SendAnalyticDataResourceC6method0aB10NetworkSDK6MethodOvg",
+                "mangledName": "$s22CampusDigitalAnalytics24SendAnalyticDataResourceC6method0aB10NetworkSDK6MethodOvg",
+                "moduleName": "CampusDigitalAnalytics",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "path",
+            "printedName": "path",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CampusDigitalAnalytics24SendAnalyticDataResourceC4pathSSvp",
+            "mangledName": "$s22CampusDigitalAnalytics24SendAnalyticDataResourceC4pathSSvp",
+            "moduleName": "CampusDigitalAnalytics",
+            "declAttributes": [
+              "Final"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22CampusDigitalAnalytics24SendAnalyticDataResourceC4pathSSvg",
+                "mangledName": "$s22CampusDigitalAnalytics24SendAnalyticDataResourceC4pathSSvg",
+                "moduleName": "CampusDigitalAnalytics",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "headers",
+            "printedName": "headers",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.AnyHashable : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.AnyHashable : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyHashable",
+                        "printedName": "Swift.AnyHashable",
+                        "usr": "s:s11AnyHashableV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CampusDigitalAnalytics24SendAnalyticDataResourceC7headersSDys11AnyHashableVypGSgvp",
+            "mangledName": "$s22CampusDigitalAnalytics24SendAnalyticDataResourceC7headersSDys11AnyHashableVypGSgvp",
+            "moduleName": "CampusDigitalAnalytics",
+            "declAttributes": [
+              "Final"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.AnyHashable : Any]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.AnyHashable : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AnyHashable",
+                            "printedName": "Swift.AnyHashable",
+                            "usr": "s:s11AnyHashableV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22CampusDigitalAnalytics24SendAnalyticDataResourceC7headersSDys11AnyHashableVypGSgvg",
+                "mangledName": "$s22CampusDigitalAnalytics24SendAnalyticDataResourceC7headersSDys11AnyHashableVypGSgvg",
+                "moduleName": "CampusDigitalAnalytics",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bodyParameters",
+            "printedName": "bodyParameters",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Encodable?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Encodable",
+                    "printedName": "Swift.Encodable",
+                    "usr": "s:SE"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CampusDigitalAnalytics24SendAnalyticDataResourceC14bodyParametersSE_pSgvp",
+            "mangledName": "$s22CampusDigitalAnalytics24SendAnalyticDataResourceC14bodyParametersSE_pSgvp",
+            "moduleName": "CampusDigitalAnalytics",
+            "declAttributes": [
+              "Final"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Encodable?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Encodable",
+                        "printedName": "Swift.Encodable",
+                        "usr": "s:SE"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22CampusDigitalAnalytics24SendAnalyticDataResourceC14bodyParametersSE_pSgvg",
+                "mangledName": "$s22CampusDigitalAnalytics24SendAnalyticDataResourceC14bodyParametersSE_pSgvg",
+                "moduleName": "CampusDigitalAnalytics",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnalyticsEventBody",
+                "printedName": "CampusDigitalAnalytics.AnalyticsEventBody",
+                "usr": "s:22CampusDigitalAnalytics0C9EventBodyV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CampusDigitalAnalytics24SendAnalyticDataResourceC4body33_D33429D926C49B0D60E431F7AA600D51LLAA0C9EventBodyVvp",
+            "mangledName": "$s22CampusDigitalAnalytics24SendAnalyticDataResourceC4body33_D33429D926C49B0D60E431F7AA600D51LLAA0C9EventBodyVvp",
+            "moduleName": "CampusDigitalAnalytics",
+            "isInternal": true,
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 0,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "token",
+            "printedName": "token",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CampusDigitalAnalytics24SendAnalyticDataResourceC5token33_D33429D926C49B0D60E431F7AA600D51LLSSSgvp",
+            "mangledName": "$s22CampusDigitalAnalytics24SendAnalyticDataResourceC5token33_D33429D926C49B0D60E431F7AA600D51LLSSSgvp",
+            "moduleName": "CampusDigitalAnalytics",
+            "isInternal": true,
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 1,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "apiKey",
+            "printedName": "apiKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CampusDigitalAnalytics24SendAnalyticDataResourceC6apiKey33_D33429D926C49B0D60E431F7AA600D51LLSSSgvp",
+            "mangledName": "$s22CampusDigitalAnalytics24SendAnalyticDataResourceC6apiKey33_D33429D926C49B0D60E431F7AA600D51LLSSSgvp",
+            "moduleName": "CampusDigitalAnalytics",
+            "isInternal": true,
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 2,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(body:token:apiKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SendAnalyticDataResource",
+                "printedName": "CampusDigitalAnalytics.SendAnalyticDataResource",
+                "usr": "s:22CampusDigitalAnalytics24SendAnalyticDataResourceC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AnalyticsEventBody",
+                "printedName": "CampusDigitalAnalytics.AnalyticsEventBody",
+                "usr": "s:22CampusDigitalAnalytics0C9EventBodyV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22CampusDigitalAnalytics24SendAnalyticDataResourceC4body5token6apiKeyAcA0C9EventBodyV_SSSgAItcfc",
+            "mangledName": "$s22CampusDigitalAnalytics24SendAnalyticDataResourceC4body5token6apiKeyAcA0C9EventBodyV_SSSgAItcfc",
+            "moduleName": "CampusDigitalAnalytics",
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:22CampusDigitalAnalytics24SendAnalyticDataResourceC",
+        "mangledName": "$s22CampusDigitalAnalytics24SendAnalyticDataResourceC",
+        "moduleName": "CampusDigitalAnalytics",
+        "declAttributes": [
+          "Final"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ApiResource",
+            "printedName": "ApiResource",
+            "usr": "s:23CampusDigitalNetworkSDK11ApiResourceP",
+            "mangledName": "$s23CampusDigitalNetworkSDK11ApiResourceP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CampusDigitalAnalytics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CampusDigitalAnalytics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CampusDigitalAnalytics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CampusDigitalNetworkSDK",
+        "printedName": "CampusDigitalNetworkSDK",
+        "declKind": "Import",
+        "moduleName": "CampusDigitalAnalytics"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "API",
+        "printedName": "API",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "baseURL",
+            "printedName": "baseURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CampusDigitalAnalytics3APIO7baseURL10Foundation0F0VvpZ",
+            "mangledName": "$s22CampusDigitalAnalytics3APIO7baseURL10Foundation0F0VvpZ",
+            "moduleName": "CampusDigitalAnalytics",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22CampusDigitalAnalytics3APIO7baseURL10Foundation0F0VvgZ",
+                "mangledName": "$s22CampusDigitalAnalytics3APIO7baseURL10Foundation0F0VvgZ",
+                "moduleName": "CampusDigitalAnalytics",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:22CampusDigitalAnalytics3APIO",
+        "mangledName": "$s22CampusDigitalAnalytics3APIO",
+        "moduleName": "CampusDigitalAnalytics",
+        "isEnumExhaustive": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Configuration",
+        "printedName": "Configuration",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "Error",
+            "printedName": "Error",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "missingKey",
+                "printedName": "missingKey",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CampusDigitalAnalytics.Configuration.Error.Type) -> CampusDigitalAnalytics.Configuration.Error",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "CampusDigitalAnalytics.Configuration.Error",
+                        "usr": "s:22CampusDigitalAnalytics13ConfigurationO5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CampusDigitalAnalytics.Configuration.Error.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "CampusDigitalAnalytics.Configuration.Error",
+                            "usr": "s:22CampusDigitalAnalytics13ConfigurationO5ErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:22CampusDigitalAnalytics13ConfigurationO5ErrorO10missingKeyyA2EmF",
+                "mangledName": "$s22CampusDigitalAnalytics13ConfigurationO5ErrorO10missingKeyyA2EmF",
+                "moduleName": "CampusDigitalAnalytics",
+                "fixedbinaryorder": 0
+              },
+              {
+                "kind": "Var",
+                "name": "invalidValue",
+                "printedName": "invalidValue",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CampusDigitalAnalytics.Configuration.Error.Type) -> CampusDigitalAnalytics.Configuration.Error",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "CampusDigitalAnalytics.Configuration.Error",
+                        "usr": "s:22CampusDigitalAnalytics13ConfigurationO5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "CampusDigitalAnalytics.Configuration.Error.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "CampusDigitalAnalytics.Configuration.Error",
+                            "usr": "s:22CampusDigitalAnalytics13ConfigurationO5ErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:22CampusDigitalAnalytics13ConfigurationO5ErrorO12invalidValueyA2EmF",
+                "mangledName": "$s22CampusDigitalAnalytics13ConfigurationO5ErrorO12invalidValueyA2EmF",
+                "moduleName": "CampusDigitalAnalytics",
+                "fixedbinaryorder": 1
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "CampusDigitalAnalytics.Configuration.Error",
+                    "usr": "s:22CampusDigitalAnalytics13ConfigurationO5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "CampusDigitalAnalytics.Configuration.Error",
+                    "usr": "s:22CampusDigitalAnalytics13ConfigurationO5ErrorO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:22CampusDigitalAnalytics13ConfigurationO5ErrorO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s22CampusDigitalAnalytics13ConfigurationO5ErrorO2eeoiySbAE_AEtFZ",
+                "moduleName": "CampusDigitalAnalytics",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:22CampusDigitalAnalytics13ConfigurationO5ErrorO9hashValueSivp",
+                "mangledName": "$s22CampusDigitalAnalytics13ConfigurationO5ErrorO9hashValueSivp",
+                "moduleName": "CampusDigitalAnalytics",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:22CampusDigitalAnalytics13ConfigurationO5ErrorO9hashValueSivg",
+                    "mangledName": "$s22CampusDigitalAnalytics13ConfigurationO5ErrorO9hashValueSivg",
+                    "moduleName": "CampusDigitalAnalytics",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:22CampusDigitalAnalytics13ConfigurationO5ErrorO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s22CampusDigitalAnalytics13ConfigurationO5ErrorO4hash4intoys6HasherVz_tF",
+                "moduleName": "CampusDigitalAnalytics",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:22CampusDigitalAnalytics13ConfigurationO5ErrorO",
+            "mangledName": "$s22CampusDigitalAnalytics13ConfigurationO5ErrorO",
+            "moduleName": "CampusDigitalAnalytics",
+            "isEnumExhaustive": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Error",
+                "printedName": "Error",
+                "usr": "s:s5ErrorP",
+                "mangledName": "$ss5ErrorP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "value",
+            "printedName": "value(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CampusDigitalAnalytics13ConfigurationO5value3forxSS_tKs25LosslessStringConvertibleRzlFZ",
+            "mangledName": "$s22CampusDigitalAnalytics13ConfigurationO5value3forxSS_tKs25LosslessStringConvertibleRzlFZ",
+            "moduleName": "CampusDigitalAnalytics",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.LosslessStringConvertible>",
+            "sugared_genericSig": "<T where T : Swift.LosslessStringConvertible>",
+            "static": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:22CampusDigitalAnalytics13ConfigurationO",
+        "mangledName": "$s22CampusDigitalAnalytics13ConfigurationO",
+        "moduleName": "CampusDigitalAnalytics",
+        "isEnumExhaustive": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EnvironmentConstants",
+        "printedName": "EnvironmentConstants",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "environment",
+            "printedName": "environment",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Environment",
+                "printedName": "CampusDigitalNetworkSDK.Environment",
+                "usr": "s:23CampusDigitalNetworkSDK11EnvironmentO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CampusDigitalAnalytics20EnvironmentConstantsO11environment0aB10NetworkSDK0D0OvpZ",
+            "mangledName": "$s22CampusDigitalAnalytics20EnvironmentConstantsO11environment0aB10NetworkSDK0D0OvpZ",
+            "moduleName": "CampusDigitalAnalytics",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "CampusDigitalNetworkSDK.Environment",
+                    "usr": "s:23CampusDigitalNetworkSDK11EnvironmentO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22CampusDigitalAnalytics20EnvironmentConstantsO11environment0aB10NetworkSDK0D0OvgZ",
+                "mangledName": "$s22CampusDigitalAnalytics20EnvironmentConstantsO11environment0aB10NetworkSDK0D0OvgZ",
+                "moduleName": "CampusDigitalAnalytics",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:22CampusDigitalAnalytics20EnvironmentConstantsO",
+        "mangledName": "$s22CampusDigitalAnalytics20EnvironmentConstantsO",
+        "moduleName": "CampusDigitalAnalytics",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CampusDigitalAnalytics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CampusDigitalNetworkSDK",
+        "printedName": "CampusDigitalNetworkSDK",
+        "declKind": "Import",
+        "moduleName": "CampusDigitalAnalytics"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SendBannersAnalyticsUseCase",
+        "printedName": "SendBannersAnalyticsUseCase",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "sendBannersAnalytics",
+            "printedName": "sendBannersAnalytics()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CampusDigitalAnalytics011SendBannersC7UseCaseP04sendeC0yyYaKF",
+            "mangledName": "$s22CampusDigitalAnalytics011SendBannersC7UseCaseP04sendeC0yyYaKF",
+            "moduleName": "CampusDigitalAnalytics",
+            "genericSig": "<τ_0_0 where τ_0_0 : CampusDigitalAnalytics.SendBannersAnalyticsUseCase>",
+            "sugared_genericSig": "<Self where Self : CampusDigitalAnalytics.SendBannersAnalyticsUseCase>",
+            "protocolReq": true,
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:22CampusDigitalAnalytics011SendBannersC7UseCaseP",
+        "mangledName": "$s22CampusDigitalAnalytics011SendBannersC7UseCaseP",
+        "moduleName": "CampusDigitalAnalytics"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SendBannersAnalyticsUseCaseImpl",
+        "printedName": "SendBannersAnalyticsUseCaseImpl",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "Constants",
+            "printedName": "Constants",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "defaultErrorCode",
+                "printedName": "defaultErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:22CampusDigitalAnalytics011SendBannersC11UseCaseImplV9ConstantsV16defaultErrorCodeSivpZ",
+                "mangledName": "$s22CampusDigitalAnalytics011SendBannersC11UseCaseImplV9ConstantsV16defaultErrorCodeSivpZ",
+                "moduleName": "CampusDigitalAnalytics",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:22CampusDigitalAnalytics011SendBannersC11UseCaseImplV9ConstantsV16defaultErrorCodeSivgZ",
+                    "mangledName": "$s22CampusDigitalAnalytics011SendBannersC11UseCaseImplV9ConstantsV16defaultErrorCodeSivgZ",
+                    "moduleName": "CampusDigitalAnalytics",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "unhandledError",
+                "printedName": "unhandledError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:22CampusDigitalAnalytics011SendBannersC11UseCaseImplV9ConstantsV14unhandledErrorSSvpZ",
+                "mangledName": "$s22CampusDigitalAnalytics011SendBannersC11UseCaseImplV9ConstantsV14unhandledErrorSSvpZ",
+                "moduleName": "CampusDigitalAnalytics",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:22CampusDigitalAnalytics011SendBannersC11UseCaseImplV9ConstantsV14unhandledErrorSSvgZ",
+                    "mangledName": "$s22CampusDigitalAnalytics011SendBannersC11UseCaseImplV9ConstantsV14unhandledErrorSSvgZ",
+                    "moduleName": "CampusDigitalAnalytics",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Constants",
+                    "printedName": "CampusDigitalAnalytics.SendBannersAnalyticsUseCaseImpl.Constants",
+                    "usr": "s:22CampusDigitalAnalytics011SendBannersC11UseCaseImplV9ConstantsV"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:22CampusDigitalAnalytics011SendBannersC11UseCaseImplV9ConstantsVAEycfc",
+                "mangledName": "$s22CampusDigitalAnalytics011SendBannersC11UseCaseImplV9ConstantsVAEycfc",
+                "moduleName": "CampusDigitalAnalytics",
+                "implicit": true,
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:22CampusDigitalAnalytics011SendBannersC11UseCaseImplV9ConstantsV",
+            "mangledName": "$s22CampusDigitalAnalytics011SendBannersC11UseCaseImplV9ConstantsV",
+            "moduleName": "CampusDigitalAnalytics",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "networkClient",
+            "printedName": "networkClient",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkClient",
+                "printedName": "CampusDigitalNetworkSDK.NetworkClient",
+                "usr": "s:23CampusDigitalNetworkSDK0C6ClientP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CampusDigitalAnalytics011SendBannersC11UseCaseImplV13networkClient33_05838E70CDC4145EC3BF88F1C4E268F3LL0aB10NetworkSDK0sJ0_pvp",
+            "mangledName": "$s22CampusDigitalAnalytics011SendBannersC11UseCaseImplV13networkClient33_05838E70CDC4145EC3BF88F1C4E268F3LL0aB10NetworkSDK0sJ0_pvp",
+            "moduleName": "CampusDigitalAnalytics",
+            "isInternal": true,
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 0,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "sendBannersAnalyticsResource",
+            "printedName": "sendBannersAnalyticsResource",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SendBannersAnalyticsResource",
+                "printedName": "CampusDigitalAnalytics.SendBannersAnalyticsResource",
+                "usr": "s:22CampusDigitalAnalytics011SendBannersC8ResourceC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22CampusDigitalAnalytics011SendBannersC11UseCaseImplV04sendeC8Resource33_05838E70CDC4145EC3BF88F1C4E268F3LLAA0decJ0Cvp",
+            "mangledName": "$s22CampusDigitalAnalytics011SendBannersC11UseCaseImplV04sendeC8Resource33_05838E70CDC4145EC3BF88F1C4E268F3LLAA0decJ0Cvp",
+            "moduleName": "CampusDigitalAnalytics",
+            "isInternal": true,
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 1,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(networkClient:sendBannersAnalyticsResource:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SendBannersAnalyticsUseCaseImpl",
+                "printedName": "CampusDigitalAnalytics.SendBannersAnalyticsUseCaseImpl",
+                "usr": "s:22CampusDigitalAnalytics011SendBannersC11UseCaseImplV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkClient",
+                "printedName": "CampusDigitalNetworkSDK.NetworkClient",
+                "usr": "s:23CampusDigitalNetworkSDK0C6ClientP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SendBannersAnalyticsResource",
+                "printedName": "CampusDigitalAnalytics.SendBannersAnalyticsResource",
+                "usr": "s:22CampusDigitalAnalytics011SendBannersC8ResourceC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22CampusDigitalAnalytics011SendBannersC11UseCaseImplV13networkClient04sendeC8ResourceAC0aB10NetworkSDK0mJ0_p_AA0decL0Ctcfc",
+            "mangledName": "$s22CampusDigitalAnalytics011SendBannersC11UseCaseImplV13networkClient04sendeC8ResourceAC0aB10NetworkSDK0mJ0_p_AA0decL0Ctcfc",
+            "moduleName": "CampusDigitalAnalytics",
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "sendBannersAnalytics",
+            "printedName": "sendBannersAnalytics()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CampusDigitalAnalytics011SendBannersC11UseCaseImplV04sendeC0yyYaKF",
+            "mangledName": "$s22CampusDigitalAnalytics011SendBannersC11UseCaseImplV04sendeC0yyYaKF",
+            "moduleName": "CampusDigitalAnalytics",
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:22CampusDigitalAnalytics011SendBannersC11UseCaseImplV",
+        "mangledName": "$s22CampusDigitalAnalytics011SendBannersC11UseCaseImplV",
+        "moduleName": "CampusDigitalAnalytics",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "SendBannersAnalyticsUseCase",
+            "printedName": "SendBannersAnalyticsUseCase",
+            "usr": "s:22CampusDigitalAnalytics011SendBannersC7UseCaseP",
+            "mangledName": "$s22CampusDigitalAnalytics011SendBannersC7UseCaseP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CampusDigitalAnalytics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SendAnalyticDataError",
+        "printedName": "SendAnalyticDataError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CampusDigitalAnalytics.SendAnalyticDataError.Type) -> (Swift.Int, Swift.String) -> CampusDigitalAnalytics.SendAnalyticDataError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int, Swift.String) -> CampusDigitalAnalytics.SendAnalyticDataError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SendAnalyticDataError",
+                        "printedName": "CampusDigitalAnalytics.SendAnalyticDataError",
+                        "usr": "s:22CampusDigitalAnalytics21SendAnalyticDataErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(statusCode: Swift.Int, body: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CampusDigitalAnalytics.SendAnalyticDataError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SendAnalyticDataError",
+                        "printedName": "CampusDigitalAnalytics.SendAnalyticDataError",
+                        "usr": "s:22CampusDigitalAnalytics21SendAnalyticDataErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:22CampusDigitalAnalytics21SendAnalyticDataErrorO7unknownyACSi_SStcACmF",
+            "mangledName": "$s22CampusDigitalAnalytics21SendAnalyticDataErrorO7unknownyACSi_SStcACmF",
+            "moduleName": "CampusDigitalAnalytics"
+          },
+          {
+            "kind": "Var",
+            "name": "internalError",
+            "printedName": "internalError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CampusDigitalAnalytics.SendAnalyticDataError.Type) -> (Swift.Int, Swift.String) -> CampusDigitalAnalytics.SendAnalyticDataError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int, Swift.String) -> CampusDigitalAnalytics.SendAnalyticDataError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SendAnalyticDataError",
+                        "printedName": "CampusDigitalAnalytics.SendAnalyticDataError",
+                        "usr": "s:22CampusDigitalAnalytics21SendAnalyticDataErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(statusCode: Swift.Int, body: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CampusDigitalAnalytics.SendAnalyticDataError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SendAnalyticDataError",
+                        "printedName": "CampusDigitalAnalytics.SendAnalyticDataError",
+                        "usr": "s:22CampusDigitalAnalytics21SendAnalyticDataErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:22CampusDigitalAnalytics21SendAnalyticDataErrorO08internalG0yACSi_SStcACmF",
+            "mangledName": "$s22CampusDigitalAnalytics21SendAnalyticDataErrorO08internalG0yACSi_SStcACmF",
+            "moduleName": "CampusDigitalAnalytics"
+          },
+          {
+            "kind": "Var",
+            "name": "badGateway",
+            "printedName": "badGateway",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CampusDigitalAnalytics.SendAnalyticDataError.Type) -> (Swift.Int, Swift.String) -> CampusDigitalAnalytics.SendAnalyticDataError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int, Swift.String) -> CampusDigitalAnalytics.SendAnalyticDataError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SendAnalyticDataError",
+                        "printedName": "CampusDigitalAnalytics.SendAnalyticDataError",
+                        "usr": "s:22CampusDigitalAnalytics21SendAnalyticDataErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(statusCode: Swift.Int, body: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CampusDigitalAnalytics.SendAnalyticDataError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SendAnalyticDataError",
+                        "printedName": "CampusDigitalAnalytics.SendAnalyticDataError",
+                        "usr": "s:22CampusDigitalAnalytics21SendAnalyticDataErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:22CampusDigitalAnalytics21SendAnalyticDataErrorO10badGatewayyACSi_SStcACmF",
+            "mangledName": "$s22CampusDigitalAnalytics21SendAnalyticDataErrorO10badGatewayyACSi_SStcACmF",
+            "moduleName": "CampusDigitalAnalytics"
+          },
+          {
+            "kind": "Var",
+            "name": "accessDenied",
+            "printedName": "accessDenied",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CampusDigitalAnalytics.SendAnalyticDataError.Type) -> (Swift.Int, Swift.String) -> CampusDigitalAnalytics.SendAnalyticDataError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int, Swift.String) -> CampusDigitalAnalytics.SendAnalyticDataError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SendAnalyticDataError",
+                        "printedName": "CampusDigitalAnalytics.SendAnalyticDataError",
+                        "usr": "s:22CampusDigitalAnalytics21SendAnalyticDataErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(statusCode: Swift.Int, body: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CampusDigitalAnalytics.SendAnalyticDataError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SendAnalyticDataError",
+                        "printedName": "CampusDigitalAnalytics.SendAnalyticDataError",
+                        "usr": "s:22CampusDigitalAnalytics21SendAnalyticDataErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:22CampusDigitalAnalytics21SendAnalyticDataErrorO12accessDeniedyACSi_SStcACmF",
+            "mangledName": "$s22CampusDigitalAnalytics21SendAnalyticDataErrorO12accessDeniedyACSi_SStcACmF",
+            "moduleName": "CampusDigitalAnalytics"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SendAnalyticDataError",
+                "printedName": "CampusDigitalAnalytics.SendAnalyticDataError",
+                "usr": "s:22CampusDigitalAnalytics21SendAnalyticDataErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SendAnalyticDataError",
+                "printedName": "CampusDigitalAnalytics.SendAnalyticDataError",
+                "usr": "s:22CampusDigitalAnalytics21SendAnalyticDataErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22CampusDigitalAnalytics21SendAnalyticDataErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s22CampusDigitalAnalytics21SendAnalyticDataErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "CampusDigitalAnalytics",
+            "static": true,
+            "implicit": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:22CampusDigitalAnalytics21SendAnalyticDataErrorO",
+        "mangledName": "$s22CampusDigitalAnalytics21SendAnalyticDataErrorO",
+        "moduleName": "CampusDigitalAnalytics",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ApiResource",
+        "printedName": "ApiResource",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "urlComponents",
+            "printedName": "urlComponents",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLComponents",
+                "printedName": "Foundation.URLComponents",
+                "usr": "s:10Foundation13URLComponentsV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23CampusDigitalNetworkSDK11ApiResourceP0aB9AnalyticsE13urlComponents10Foundation13URLComponentsVvp",
+            "mangledName": "$s23CampusDigitalNetworkSDK11ApiResourceP0aB9AnalyticsE13urlComponents10Foundation13URLComponentsVvp",
+            "moduleName": "CampusDigitalAnalytics",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLComponents",
+                    "printedName": "Foundation.URLComponents",
+                    "usr": "s:10Foundation13URLComponentsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23CampusDigitalNetworkSDK11ApiResourceP0aB9AnalyticsE13urlComponents10Foundation13URLComponentsVvg",
+                "mangledName": "$s23CampusDigitalNetworkSDK11ApiResourceP0aB9AnalyticsE13urlComponents10Foundation13URLComponentsVvg",
+                "moduleName": "CampusDigitalAnalytics",
+                "genericSig": "<τ_0_0 where τ_0_0 : CampusDigitalNetworkSDK.ApiResource>",
+                "sugared_genericSig": "<Self where Self : CampusDigitalNetworkSDK.ApiResource>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "headers",
+            "printedName": "headers",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.AnyHashable : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.AnyHashable : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyHashable",
+                        "printedName": "Swift.AnyHashable",
+                        "usr": "s:s11AnyHashableV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23CampusDigitalNetworkSDK11ApiResourceP0aB9AnalyticsE7headersSDys11AnyHashableVypGSgvp",
+            "mangledName": "$s23CampusDigitalNetworkSDK11ApiResourceP0aB9AnalyticsE7headersSDys11AnyHashableVypGSgvp",
+            "moduleName": "CampusDigitalAnalytics",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.AnyHashable : Any]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.AnyHashable : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AnyHashable",
+                            "printedName": "Swift.AnyHashable",
+                            "usr": "s:s11AnyHashableV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23CampusDigitalNetworkSDK11ApiResourceP0aB9AnalyticsE7headersSDys11AnyHashableVypGSgvg",
+                "mangledName": "$s23CampusDigitalNetworkSDK11ApiResourceP0aB9AnalyticsE7headersSDys11AnyHashableVypGSgvg",
+                "moduleName": "CampusDigitalAnalytics",
+                "genericSig": "<τ_0_0 where τ_0_0 : CampusDigitalNetworkSDK.ApiResource>",
+                "sugared_genericSig": "<Self where Self : CampusDigitalNetworkSDK.ApiResource>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bodyParameters",
+            "printedName": "bodyParameters",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Encodable?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Encodable",
+                    "printedName": "Swift.Encodable",
+                    "usr": "s:SE"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23CampusDigitalNetworkSDK11ApiResourceP0aB9AnalyticsE14bodyParametersSE_pSgvp",
+            "mangledName": "$s23CampusDigitalNetworkSDK11ApiResourceP0aB9AnalyticsE14bodyParametersSE_pSgvp",
+            "moduleName": "CampusDigitalAnalytics",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Encodable?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Encodable",
+                        "printedName": "Swift.Encodable",
+                        "usr": "s:SE"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23CampusDigitalNetworkSDK11ApiResourceP0aB9AnalyticsE14bodyParametersSE_pSgvg",
+                "mangledName": "$s23CampusDigitalNetworkSDK11ApiResourceP0aB9AnalyticsE14bodyParametersSE_pSgvg",
+                "moduleName": "CampusDigitalAnalytics",
+                "genericSig": "<τ_0_0 where τ_0_0 : CampusDigitalNetworkSDK.ApiResource>",
+                "sugared_genericSig": "<Self where Self : CampusDigitalNetworkSDK.ApiResource>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "multipartBodyParameters",
+            "printedName": "multipartBodyParameters",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CampusDigitalNetworkSDK.MultipartFormData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MultipartFormData",
+                    "printedName": "CampusDigitalNetworkSDK.MultipartFormData",
+                    "usr": "s:23CampusDigitalNetworkSDK17MultipartFormDataP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23CampusDigitalNetworkSDK11ApiResourceP0aB9AnalyticsE23multipartBodyParametersAA17MultipartFormData_pSgvp",
+            "mangledName": "$s23CampusDigitalNetworkSDK11ApiResourceP0aB9AnalyticsE23multipartBodyParametersAA17MultipartFormData_pSgvp",
+            "moduleName": "CampusDigitalAnalytics",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CampusDigitalNetworkSDK.MultipartFormData?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MultipartFormData",
+                        "printedName": "CampusDigitalNetworkSDK.MultipartFormData",
+                        "usr": "s:23CampusDigitalNetworkSDK17MultipartFormDataP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23CampusDigitalNetworkSDK11ApiResourceP0aB9AnalyticsE23multipartBodyParametersAA17MultipartFormData_pSgvg",
+                "mangledName": "$s23CampusDigitalNetworkSDK11ApiResourceP0aB9AnalyticsE23multipartBodyParametersAA17MultipartFormData_pSgvg",
+                "moduleName": "CampusDigitalAnalytics",
+                "genericSig": "<τ_0_0 where τ_0_0 : CampusDigitalNetworkSDK.ApiResource>",
+                "sugared_genericSig": "<Self where Self : CampusDigitalNetworkSDK.ApiResource>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cachePolicy",
+            "printedName": "cachePolicy",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CachePolicy",
+                "printedName": "Foundation.NSURLRequest.CachePolicy",
+                "usr": "c:@E@NSURLRequestCachePolicy"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23CampusDigitalNetworkSDK11ApiResourceP0aB9AnalyticsE11cachePolicySo017NSURLRequestCacheI0Vvp",
+            "mangledName": "$s23CampusDigitalNetworkSDK11ApiResourceP0aB9AnalyticsE11cachePolicySo017NSURLRequestCacheI0Vvp",
+            "moduleName": "CampusDigitalAnalytics",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CachePolicy",
+                    "printedName": "Foundation.NSURLRequest.CachePolicy",
+                    "usr": "c:@E@NSURLRequestCachePolicy"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23CampusDigitalNetworkSDK11ApiResourceP0aB9AnalyticsE11cachePolicySo017NSURLRequestCacheI0Vvg",
+                "mangledName": "$s23CampusDigitalNetworkSDK11ApiResourceP0aB9AnalyticsE11cachePolicySo017NSURLRequestCacheI0Vvg",
+                "moduleName": "CampusDigitalAnalytics",
+                "genericSig": "<τ_0_0 where τ_0_0 : CampusDigitalNetworkSDK.ApiResource>",
+                "sugared_genericSig": "<Self where Self : CampusDigitalNetworkSDK.ApiResource>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timeout",
+            "printedName": "timeout",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23CampusDigitalNetworkSDK11ApiResourceP0aB9AnalyticsE7timeoutSdvp",
+            "mangledName": "$s23CampusDigitalNetworkSDK11ApiResourceP0aB9AnalyticsE7timeoutSdvp",
+            "moduleName": "CampusDigitalAnalytics",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23CampusDigitalNetworkSDK11ApiResourceP0aB9AnalyticsE7timeoutSdvg",
+                "mangledName": "$s23CampusDigitalNetworkSDK11ApiResourceP0aB9AnalyticsE7timeoutSdvg",
+                "moduleName": "CampusDigitalAnalytics",
+                "genericSig": "<τ_0_0 where τ_0_0 : CampusDigitalNetworkSDK.ApiResource>",
+                "sugared_genericSig": "<Self where Self : CampusDigitalNetworkSDK.ApiResource>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "queryItems",
+            "printedName": "queryItems",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Foundation.URLQueryItem]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Foundation.URLQueryItem]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URLQueryItem",
+                        "printedName": "Foundation.URLQueryItem",
+                        "usr": "s:10Foundation12URLQueryItemV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23CampusDigitalNetworkSDK11ApiResourceP0aB9AnalyticsE10queryItemsSay10Foundation12URLQueryItemVGSgvp",
+            "mangledName": "$s23CampusDigitalNetworkSDK11ApiResourceP0aB9AnalyticsE10queryItemsSay10Foundation12URLQueryItemVGSgvp",
+            "moduleName": "CampusDigitalAnalytics",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Foundation.URLQueryItem]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Foundation.URLQueryItem]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLQueryItem",
+                            "printedName": "Foundation.URLQueryItem",
+                            "usr": "s:10Foundation12URLQueryItemV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23CampusDigitalNetworkSDK11ApiResourceP0aB9AnalyticsE10queryItemsSay10Foundation12URLQueryItemVGSgvg",
+                "mangledName": "$s23CampusDigitalNetworkSDK11ApiResourceP0aB9AnalyticsE10queryItemsSay10Foundation12URLQueryItemVGSgvg",
+                "moduleName": "CampusDigitalAnalytics",
+                "genericSig": "<τ_0_0 where τ_0_0 : CampusDigitalNetworkSDK.ApiResource>",
+                "sugared_genericSig": "<Self where Self : CampusDigitalNetworkSDK.ApiResource>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:23CampusDigitalNetworkSDK11ApiResourceP",
+        "mangledName": "$s23CampusDigitalNetworkSDK11ApiResourceP",
+        "moduleName": "CampusDigitalNetworkSDK",
+        "isExternal": true
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/alex.vila\/Documents\/Universia\/iOS\/campusdigital-sdk-analytics-ios-mobile\/CampusDigitalAnalytics\/API\/BannersAnalytics\/UseCase\/Resources\/SendBannersAnalyticsResource.swift",
+      "kind": "StringLiteral",
+      "offset": 271,
+      "length": 54,
+      "value": "\"\/campuspack-lite-project\/api\/advertisements\/%@\/click\""
+    },
+    {
+      "filePath": "\/Users\/alex.vila\/Documents\/Universia\/iOS\/campusdigital-sdk-analytics-ios-mobile\/CampusDigitalAnalytics\/API\/BannersAnalytics\/UseCase\/Resources\/SendBannersAnalyticsResource.swift",
+      "kind": "StringLiteral",
+      "offset": 807,
+      "length": 48,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex.vila\/Documents\/Universia\/iOS\/campusdigital-sdk-analytics-ios-mobile\/CampusDigitalAnalytics\/API\/BannersAnalytics\/UseCase\/Resources\/SendBannersAnalyticsResource.swift",
+      "kind": "StringLiteral",
+      "offset": 840,
+      "length": 1,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/alex.vila\/Documents\/Universia\/iOS\/campusdigital-sdk-analytics-ios-mobile\/CampusDigitalAnalytics\/API\/BannersAnalytics\/UseCase\/Resources\/SendBannersAnalyticsResource.swift",
+      "kind": "StringLiteral",
+      "offset": 854,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex.vila\/Documents\/Universia\/iOS\/campusdigital-sdk-analytics-ios-mobile\/CampusDigitalAnalytics\/API\/BannersAnalytics\/UseCase\/Resources\/Entities\/BannersAnalyticsBody.swift",
+      "kind": "StringLiteral",
+      "offset": 218,
+      "length": 5,
+      "value": "\"ios\""
+    },
+    {
+      "filePath": "\/Users\/alex.vila\/Documents\/Universia\/iOS\/campusdigital-sdk-analytics-ios-mobile\/CampusDigitalAnalytics\/Helpers\/Networking\/ApiResource+Defaults.swift",
+      "kind": "StringLiteral",
+      "offset": 299,
+      "length": 7,
+      "value": "\"https\""
+    },
+    {
+      "filePath": "\/Users\/alex.vila\/Documents\/Universia\/iOS\/campusdigital-sdk-analytics-ios-mobile\/CampusDigitalAnalytics\/Helpers\/Networking\/ApiResource+Defaults.swift",
+      "kind": "IntegerLiteral",
+      "offset": 957,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/alex.vila\/Documents\/Universia\/iOS\/campusdigital-sdk-analytics-ios-mobile\/CampusDigitalAnalytics\/API\/SendEventData\/UseCase\/SendAnalyticDataUseCase.swift",
+      "kind": "IntegerLiteral",
+      "offset": 362,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/alex.vila\/Documents\/Universia\/iOS\/campusdigital-sdk-analytics-ios-mobile\/CampusDigitalAnalytics\/API\/SendEventData\/UseCase\/SendAnalyticDataUseCase.swift",
+      "kind": "StringLiteral",
+      "offset": 401,
+      "length": 17,
+      "value": "\"Unhandled error\""
+    },
+    {
+      "filePath": "\/Users\/alex.vila\/Documents\/Universia\/iOS\/campusdigital-sdk-analytics-ios-mobile\/CampusDigitalAnalytics\/Helpers\/ATTrackingManagerWrapper\/ATTrackingManagerWrapper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 495,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex.vila\/Documents\/Universia\/iOS\/campusdigital-sdk-analytics-ios-mobile\/CampusDigitalAnalytics\/Helpers\/ATTrackingManagerWrapper\/ATTrackingManagerWrapper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 817,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alex.vila\/Documents\/Universia\/iOS\/campusdigital-sdk-analytics-ios-mobile\/CampusDigitalAnalytics\/Helpers\/ATTrackingManagerWrapper\/ATTrackingManagerWrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 852,
+      "length": 42,
+      "value": "\"Tracking permission souldn´t be handled\""
+    },
+    {
+      "filePath": "\/Users\/alex.vila\/Documents\/Universia\/iOS\/campusdigital-sdk-analytics-ios-mobile\/CampusDigitalAnalytics\/Helpers\/ATTrackingManagerWrapper\/ATTrackingManagerWrapper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 920,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/alex.vila\/Documents\/Universia\/iOS\/campusdigital-sdk-analytics-ios-mobile\/CampusDigitalAnalytics\/Helpers\/ATTrackingManagerWrapper\/ATTrackingManagerWrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 1054,
+      "length": 68,
+      "value": "\"requestTrackingAuthorization status: \""
+    },
+    {
+      "filePath": "\/Users\/alex.vila\/Documents\/Universia\/iOS\/campusdigital-sdk-analytics-ios-mobile\/CampusDigitalAnalytics\/Helpers\/ATTrackingManagerWrapper\/ATTrackingManagerWrapper.swift",
+      "kind": "StringLiteral",
+      "offset": 1121,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex.vila\/Documents\/Universia\/iOS\/campusdigital-sdk-analytics-ios-mobile\/CampusDigitalAnalytics\/API\/SendEventData\/UseCase\/Resources\/SendAnalyticDataResource.swift",
+      "kind": "StringLiteral",
+      "offset": 263,
+      "length": 44,
+      "value": "\"\/campusdigital-metrics\/api\/analytics\/event\""
+    },
+    {
+      "filePath": "\/Users\/alex.vila\/Documents\/Universia\/iOS\/campusdigital-sdk-analytics-ios-mobile\/CampusDigitalAnalytics\/API\/SendEventData\/UseCase\/Resources\/SendAnalyticDataResource.swift",
+      "kind": "StringLiteral",
+      "offset": 958,
+      "length": 43,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex.vila\/Documents\/Universia\/iOS\/campusdigital-sdk-analytics-ios-mobile\/CampusDigitalAnalytics\/API\/SendEventData\/UseCase\/Resources\/SendAnalyticDataResource.swift",
+      "kind": "StringLiteral",
+      "offset": 991,
+      "length": 1,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/alex.vila\/Documents\/Universia\/iOS\/campusdigital-sdk-analytics-ios-mobile\/CampusDigitalAnalytics\/API\/SendEventData\/UseCase\/Resources\/SendAnalyticDataResource.swift",
+      "kind": "StringLiteral",
+      "offset": 1000,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex.vila\/Documents\/Universia\/iOS\/campusdigital-sdk-analytics-ios-mobile\/CampusDigitalAnalytics\/API\/SendEventData\/CampusDigitalAnalyticsAPI+SendEventData.swift",
+      "kind": "StringLiteral",
+      "offset": 272,
+      "length": 5,
+      "value": "\"ios\""
+    },
+    {
+      "filePath": "\/Users\/alex.vila\/Documents\/Universia\/iOS\/campusdigital-sdk-analytics-ios-mobile\/CampusDigitalAnalytics\/XCConfig\/Configuration.swift",
+      "kind": "StringLiteral",
+      "offset": 275,
+      "length": 14,
+      "value": "\"API_BASE_URL\""
+    },
+    {
+      "filePath": "\/Users\/alex.vila\/Documents\/Universia\/iOS\/campusdigital-sdk-analytics-ios-mobile\/CampusDigitalAnalytics\/XCConfig\/Configuration.swift",
+      "kind": "StringLiteral",
+      "offset": 321,
+      "length": 23,
+      "value": "\"API_BASE_URL is nil!!\""
+    },
+    {
+      "filePath": "\/Users\/alex.vila\/Documents\/Universia\/iOS\/campusdigital-sdk-analytics-ios-mobile\/CampusDigitalAnalytics\/XCConfig\/Configuration.swift",
+      "kind": "StringLiteral",
+      "offset": 397,
+      "length": 22,
+      "value": "\"https:\/\/\""
+    },
+    {
+      "filePath": "\/Users\/alex.vila\/Documents\/Universia\/iOS\/campusdigital-sdk-analytics-ios-mobile\/CampusDigitalAnalytics\/XCConfig\/Configuration.swift",
+      "kind": "StringLiteral",
+      "offset": 418,
+      "length": 9,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex.vila\/Documents\/Universia\/iOS\/campusdigital-sdk-analytics-ios-mobile\/CampusDigitalAnalytics\/XCConfig\/Configuration.swift",
+      "kind": "StringLiteral",
+      "offset": 451,
+      "length": 14,
+      "value": "\"URL is nil!!\""
+    },
+    {
+      "filePath": "\/Users\/alex.vila\/Documents\/Universia\/iOS\/campusdigital-sdk-analytics-ios-mobile\/CampusDigitalAnalytics\/XCConfig\/Configuration.swift",
+      "kind": "StringLiteral",
+      "offset": 496,
+      "length": 18,
+      "value": "\"-->> \""
+    },
+    {
+      "filePath": "\/Users\/alex.vila\/Documents\/Universia\/iOS\/campusdigital-sdk-analytics-ios-mobile\/CampusDigitalAnalytics\/XCConfig\/Configuration.swift",
+      "kind": "StringLiteral",
+      "offset": 508,
+      "length": 4,
+      "value": "\" <<--\""
+    },
+    {
+      "filePath": "\/Users\/alex.vila\/Documents\/Universia\/iOS\/campusdigital-sdk-analytics-ios-mobile\/CampusDigitalAnalytics\/XCConfig\/Configuration.swift",
+      "kind": "StringLiteral",
+      "offset": 1377,
+      "length": 13,
+      "value": "\"ENVIRONMENT\""
+    },
+    {
+      "filePath": "\/Users\/alex.vila\/Documents\/Universia\/iOS\/campusdigital-sdk-analytics-ios-mobile\/CampusDigitalAnalytics\/API\/BannersAnalytics\/UseCase\/SendBannersAnalyticsUseCase.swift",
+      "kind": "IntegerLiteral",
+      "offset": 376,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/alex.vila\/Documents\/Universia\/iOS\/campusdigital-sdk-analytics-ios-mobile\/CampusDigitalAnalytics\/API\/BannersAnalytics\/UseCase\/SendBannersAnalyticsUseCase.swift",
+      "kind": "StringLiteral",
+      "offset": 415,
+      "length": 17,
+      "value": "\"Unhandled error\""
+    }
+  ]
+}
